@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'supermilk';
+    src: url("../fonts/supermilk.ttf");
+}
+
+* {
+    font-family: 'supermilk';
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/bg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    color: white;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1340px;
+    width: 100%;
+    padding: 0 16px;
+    margin: auto;
+}
