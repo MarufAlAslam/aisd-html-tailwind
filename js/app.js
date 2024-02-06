@@ -14,8 +14,8 @@ navigatorButtons.forEach((button) => {
     const buttonText = button.textContent;
 
     // get left and right divs with id #leftContent and #rightContent
-    const leftContent = document.getElementById("left"+buttonText);
-    const rightContent = document.getElementById("right"+buttonText);
+    const leftContent = document.getElementById("left" + buttonText);
+    const rightContent = document.getElementById("right" + buttonText);
 
     // remove active class from all divs
     const allContents = document.querySelectorAll(".content");
@@ -28,7 +28,6 @@ navigatorButtons.forEach((button) => {
     rightContent.classList.add("active");
   });
 });
-
 
 const tabBtns = document.querySelectorAll(".tab-btn");
 
@@ -48,4 +47,53 @@ tabBtns.forEach((btn) => {
     const title = document.getElementById("title");
     title.textContent = btnText;
   });
+});
+
+const items = document.querySelectorAll(".item");
+
+const removeActive = () => {
+  items.forEach((item) => {
+    item.classList.remove("active");
+  });
+};
+
+const item1 = document.getElementById("item1");
+const item2 = document.getElementById("item2");
+const item3 = document.getElementById("item3");
+const item4 = document.getElementById("item4");
+const item5 = document.getElementById("item5");
+const circle = document.getElementById("circle");
+
+item1.addEventListener("click", () => {
+  circle.style.left = "0";
+  removeActive();
+  item1.classList.add("active");
+});
+
+item2.addEventListener("click", () => {
+  circle.style.left = "25%";
+  circle.style.transform = "translateX(-25%) translateY(-50%)";
+  removeActive();
+  item2.classList.add("active");  
+});
+
+item3.addEventListener("click", () => {
+  circle.style.left = "50%";
+  circle.style.transform = "translateX(-50%) translateY(-50%)";
+  removeActive();
+  item3.classList.add("active");
+});
+
+item4.addEventListener("click", () => {
+  circle.style.left = "75%";
+  circle.style.transform = "translateX(-75%) translateY(-50%)";
+  removeActive();
+  item4.classList.add("active");
+});
+
+item5.addEventListener("click", () => {
+  circle.style.left = "100%";
+  circle.style.transform = "translateX(-100%) translateY(-50%)";
+  removeActive();
+  item5.classList.add("active");
 });

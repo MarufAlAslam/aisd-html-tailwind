@@ -138,11 +138,11 @@ input[type="radio"]:checked+label {
     display: block;
 }
 
-.tab-btn.active{
+.tab-btn.active {
     background-color: #00bfff;
 }
 
-.bg-sky{
+.bg-sky {
     background-color: #00bfff;
 }
 
@@ -153,4 +153,36 @@ input[type="radio"]:checked+label {
 
 .card.relative:hover .card-body {
     transform: translateY(0);
+}
+
+.roadmap .item {
+    background-color: #414141;
+}
+
+.roadmap .item:hover {
+    background-color: #00bfff;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #00bfff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.4s;
+}
+
+.item.active {
+    background-color: #00bfff;
+}
+
+.line {
+    height: 1px;
+    border-bottom: 3px dashed #414141;
 }
