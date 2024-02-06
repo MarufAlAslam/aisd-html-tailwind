@@ -125,3 +125,19 @@ input[type="radio"]:checked+label {
 #left5.active {
     display: block;
 }
+
+.text-sky {
+    color: #00bfff;
+}
+
+.m-content {
+    display: none;
+}
+
+.m-content.active {
+    display: block;
+}
+
+.tab-btn.active{
+    background-color: #00bfff;
+}

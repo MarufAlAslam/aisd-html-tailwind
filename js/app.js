@@ -28,3 +28,24 @@ navigatorButtons.forEach((button) => {
     rightContent.classList.add("active");
   });
 });
+
+
+const tabBtns = document.querySelectorAll(".tab-btn");
+
+tabBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    // remove active class from all buttons
+    tabBtns.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+
+    // add active class to the clicked button
+    btn.classList.add("active");
+
+    // get button's text
+    const btnText = btn.textContent;
+
+    const title = document.getElementById("title");
+    title.textContent = btnText;
+  });
+});
