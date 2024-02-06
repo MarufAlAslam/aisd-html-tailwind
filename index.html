@@ -1,43 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AISD</title>
 
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- font -->
-    <link href="https://fonts.cdnfonts.com/css/super-milk" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/super-milk" rel="stylesheet" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- style css -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- nav -->
     <nav class="nav py-3">
-        <div class="container">
-            <div class="flex justify-between items-center gap-3">
-                <a href="./">
-                    <img src="img/logo.png" alt="logo" class="logo w-[200px]">
-                </a>
-            
-                <ul class="flex justify-end items-center gap-[24px]">
-                    <a href="" class="text-white font-bold">AISD</a>
-                    <a href="" class="text-white font-bold">Technologies</a>
-                    <a href="" class="text-white font-bold">Roadmap</a>
-                    <a href="" class="text-white font-bold">Tokenomics</a>
-                    <a href="" class="text-white font-bold">White Paper</a>
-                    <a href="" class="btn-sky font-bold">Connect Wallet</a>
-                </ul>
-            </div>
+      <div class="container">
+        <div class="flex justify-between items-center gap-3">
+          <a href="./">
+            <img src="img/logo.png" alt="logo" class="logo w-[200px]" />
+          </a>
+
+          <ul class="flex justify-end items-center gap-[24px]">
+            <a href="" class="text-white font-bold">AISD</a>
+            <a href="" class="text-white font-bold">Technologies</a>
+            <a href="" class="text-white font-bold">Roadmap</a>
+            <a href="" class="text-white font-bold">Tokenomics</a>
+            <a href="" class="text-white font-bold">White Paper</a>
+            <a href="" class="btn-sky font-bold">Connect Wallet</a>
+          </ul>
         </div>
+      </div>
     </nav>
     <!-- nav -->
-    
+
+    <!-- hero -->
+    <section class="hero py-20">
+      <div class="container">
+        <div class="flex justify-between items-center gap-[150px]">
+          <div class="left">
+            <p class="text-2xl text-white mb-2">Meet, Trust, Earn</p>
+            <h1 class="text-[80px] text-white font-bold mb-4">
+              The future <br />
+              Of dating!
+            </h1>
+            <p class="roboto text-xl">
+              Dating can be hard, especially in the digital age. You never
+              knowwho you are talking to, what their intentions are or if they
+              are even real. That’s why we created a new app that uses
+              blockchain and AI to verify the identity and authenticity of every
+              user. No more ph oto theft, no more catfishing, no more scams.
+              Just real connections and real rewards.
+            </p>
+
+            <div class="flex mt-8 justify-start items-center gap-5">
+                <a href="" class="btn-sky font-bold py-4 px-8 text-xl rounded-[10px]">
+                    Download App
+                </a>
+                <a href="" class="btn-dark font-bold py-4 px-8 text-xl rounded-[10px]">
+                   Look At Whitepaper
+                </a>
+            </div>
+          </div>
+
+          <div
+            class="right min-w-[440px] w-[440px] max-w-[100%] rounded-[15px] border-sky p-[40px] bg-[#2e2e2e]"
+          >
+            <h3 class="text-2xl font-bold text-white text-center">
+              AISD ICO Presale
+            </h3>
+            <p class="roboto text-center font-bold my-4 text-white">
+              1 AISD = 0.000015$
+            </p>
+
+            <div class="progress bg-[#464646] rounded-[10px] overflow-hidden">
+              <div
+                class="progress-inner bg-[#0abab5] rounded-[10px] h-[25px] w-[50px]"
+              ></div>
+            </div>
+
+            <p class="roboto text-center font-bold my-4 text-white">
+              Token Sold : X / 200,000,000,000
+            </p>
+
+            <form action="">
+              <div
+                class="date-holder bg-[#464646] px-8 py-3 rounded-[10px] text-white text-center"
+              >
+                <p class="roboto font-semibold">152D : 8H : 24M : 30S</p>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3 mt-3 mb-2">
+                <div class="holder">
+                  <input
+                    type="radio"
+                    checked
+                    name="coin"
+                    value="BNB"
+                    id="bnb"
+                  />
+                  <label for="bnb" class="roboto cursor-pointer text-white">
+                    <i class="fa fa-circle"></i>
+                    <span class="roboto font-semibold">BNB</span>
+                  </label>
+                </div>
+                <div class="holder">
+                  <input type="radio" name="coin" value="USDT" id="usdt" />
+                  <label for="usdt" class="roboto cursor-pointer text-white">
+                    <i class="fa fa-circle"></i>
+                    <span class="roboto font-semibold">BNB</span>
+                  </label>
+                </div>
+              </div>
+
+              <p class="text-[8px] mb-2 roboto font-bold">Amount in BNB You Pay:</p>
+
+              <div class="flex gap-0 justify-between gap-2 rounded-[10px] items-center bg-[#464646] p-2">
+                <input type="text" class="bg-[#464646] h-full outline-0 border-0 shadow-0 px-4 w-full m-0" name="" id="">
+                <div class="options flex gap-2 justify-end m-0 items-center">
+                    <span class="btn-sky text-sm rounded-full py-2">Max</span>
+                    <i class="fa fa-circle"></i>
+                </div>
+              </div>
+              <p class="text-[8px] mb-2 mt-2 roboto font-bold">Amount in AISD You Receive:</p>
+
+              <div class="flex gap-0 justify-between gap-2 rounded-[10px] items-center bg-[#464646] p-4">
+                <input type="text" class="bg-[#464646] h-full outline-0 border-0 shadow-0 px-4 w-full m-0" name="" id="">
+              </div>
+
+              <button class="btn-sky w-full mt-3 py-4 text-xl">
+                Buy Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero -->
+
     <!-- app js -->
     <script src="js/app.js"></script>
-</body>
+  </body>
 </html>
