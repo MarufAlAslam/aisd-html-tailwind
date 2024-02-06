@@ -141,3 +141,16 @@ input[type="radio"]:checked+label {
 .tab-btn.active{
     background-color: #00bfff;
 }
+
+.bg-sky{
+    background-color: #00bfff;
+}
+
+.card.relative .card-body {
+    transition: 0.5s;
+    transform: translateY(-100%);
+}
+
+.card.relative:hover .card-body {
+    transform: translateY(0);
+}
