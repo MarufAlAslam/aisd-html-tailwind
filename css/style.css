@@ -1,10 +1,12 @@
-@font-face {
+/* @font-face {
     font-family: 'supermilk';
     src: url("../fonts/supermilk.ttf");
-}
+} */
 
 * {
-    font-family: 'supermilk';
+    font-family: 'Super Milk', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
 }
 
 body {
@@ -25,4 +27,14 @@ html, body{
     width: 100%;
     padding: 0 16px;
     margin: auto;
+}
+
+.btn-sky{
+    background-color: #00bfff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
