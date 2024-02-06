@@ -13,7 +13,7 @@
 body {
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/bg.png");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     color: white;
@@ -185,4 +185,8 @@ input[type="radio"]:checked+label {
 .line {
     height: 1px;
     border-bottom: 3px dashed #414141;
+}
+
+.italic {
+    font-style: italic;
 }
