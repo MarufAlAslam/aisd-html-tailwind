@@ -12,7 +12,7 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/bg.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -32,7 +32,7 @@ body {
 }
 
 .btn-sky {
-    background-color: #00bfff;
+    background-color: #0abab5;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -57,7 +57,7 @@ body {
 }
 
 .border-sky {
-    border: 1px solid #00bfff;
+    border: 1px solid #0abab5;
 }
 
 .holder label {
@@ -76,7 +76,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked+label {
-    background-color: #00bfff;
+    background-color: #0abab5;
     color: white;
 }
 
@@ -127,7 +127,7 @@ input[type="radio"]:checked+label {
 }
 
 .text-sky {
-    color: #00bfff;
+    color: #0abab5;
 }
 
 .m-content {
@@ -139,11 +139,11 @@ input[type="radio"]:checked+label {
 }
 
 .tab-btn.active {
-    background-color: #00bfff;
+    background-color: #0abab5;
 }
 
 .bg-sky {
-    background-color: #00bfff;
+    background-color: #0abab5;
 }
 
 .card.relative .card-body {
@@ -160,14 +160,14 @@ input[type="radio"]:checked+label {
 }
 
 .roadmap .item:hover {
-    background-color: #00bfff;
+    background-color: #0abab5;
 }
 
 .circle {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #00bfff;
+    background-color: #0abab5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,7 +179,7 @@ input[type="radio"]:checked+label {
 }
 
 .item.active {
-    background-color: #00bfff;
+    background-color: #0abab5;
 }
 
 .line {
@@ -192,7 +192,7 @@ input[type="radio"]:checked+label {
 }
 
 .icon:hover {
-    background-color: #00bfff;
+    background-color: #0abab5;
 }
 
 .divider {
