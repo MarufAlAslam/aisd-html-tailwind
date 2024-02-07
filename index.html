@@ -53,18 +53,64 @@
             <a href="" class="btn-sky font-bold">Connect Wallet</a>
           </ul>
 
-          <div class="tab flex justify-end items-center gap-[24px]">
+          <div class="tab flex justify-end items-center gap-[24px] w-full">
             <a href="" class="btn-sky font-bold lg:text-sm text-[8px]"
               >Connect Wallet</a
             >
-            <button class="menu-btn" id="menu-btn">
-              <i class="fa fa-bars fa-2x"></i>
+            <button class="menu-btn p-0" id="menu-btn">
+              <i class="fa fa-bars text-[20px]"></i>
             </button>
           </div>
         </div>
       </div>
     </nav>
     <!-- nav -->
+
+    <!-- mobile-menu -->
+    <aside class="tab mobile-menu" id="mobile-menu">
+      <div class="container">
+        <div class="flex justify-between items-center gap-3">
+          <a href="./">
+            <img
+              src="img/logo.png"
+              alt="logo"
+              class="logo md:w-[200px] w-[120px]"
+            />
+          </a>
+
+          <div class="tab flex justify-end items-center gap-[24px] w-full">
+            <a href="" class="btn-sky font-bold lg:text-sm text-[8px]"
+              >Connect Wallet</a
+            >
+            <button class="menu-btn" id="close-btn">
+              <i class="fa fa-times text-[20px]"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="menus">
+        <div class="container">
+          <ul class="flex flex-col gap-5">
+            <li>
+              <a href=""> Aisd </a>
+            </li>
+            <li>
+              <a href=""> Technologies </a>
+            </li>
+            <li>
+              <a href=""> Roadmap </a>
+            </li>
+            <li>
+              <a href=""> Tokenomics </a>
+            </li>
+            <li>
+              <a href=""> White Paper </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <!-- mobile-menu -->
 
     <!-- hero -->
     <section class="hero py-20">
@@ -515,38 +561,54 @@
     <section class="roadmap py-20">
       <div class="container">
         <div class="text-center">
-          <h2 class="lg:text-[80px] md:text-[60px] text-[30px] font-bold text-white mb-20">Roadmap</h2>
+          <h2
+            class="lg:text-[80px] md:text-[60px] text-[30px] font-bold text-white mb-20"
+          >
+            Roadmap
+          </h2>
 
           <div class="indicator relative mt-[20px]">
             <div class="circle" id="circle"></div>
             <div class="line"></div>
           </div>
 
-          <div class="grid mt-20 lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-[20px] md:gap-[40px]">
+          <div
+            class="grid mt-20 lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-[20px] md:gap-[40px]"
+          >
             <div id="item1" class="item p-[20px] rounded-[20px] cursor-pointer">
               <p class="text-[16px] md:text-2xl font-bold">Stage. 01</p>
               <p class="text-xs md:text-lg text-white">(Q1 - Q2)</p>
-              <p class="text-xs md:text-[16px] roboto mt-3">Coin Launch & Dating App Development</p>
+              <p class="text-xs md:text-[16px] roboto mt-3">
+                Coin Launch & Dating App Development
+              </p>
             </div>
             <div id="item2" class="item p-[20px] rounded-[20px] cursor-pointer">
               <p class="text-[16px] md:text-2xl font-bold">Stage. 02</p>
               <p class="text-xs md:text-lg text-white">(Q2 - Q3)</p>
-              <p class="text-xs md:text-[16px] roboto mt-3">Funding & Marketing</p>
+              <p class="text-xs md:text-[16px] roboto mt-3">
+                Funding & Marketing
+              </p>
             </div>
             <div id="item3" class="item p-[20px] rounded-[20px] cursor-pointer">
               <p class="text-[16px] md:text-2xl font-bold">Stage. 03</p>
               <p class="text-xs md:text-lg text-white">(Q3)</p>
-              <p class="text-xs md:text-[16px] roboto mt-3">Internal Validation & Testing</p>
+              <p class="text-xs md:text-[16px] roboto mt-3">
+                Internal Validation & Testing
+              </p>
             </div>
             <div id="item4" class="item p-[20px] rounded-[20px] cursor-pointer">
               <p class="text-[16px] md:text-2xl font-bold">Stage. 04</p>
               <p class="text-xs md:text-lg text-white">(Q4)</p>
-              <p class="text-xs md:text-[16px] roboto mt-3">Beta Launch of Dating App</p>
+              <p class="text-xs md:text-[16px] roboto mt-3">
+                Beta Launch of Dating App
+              </p>
             </div>
             <div id="item5" class="item p-[20px] rounded-[20px] cursor-pointer">
               <p class="text-[16px] md:text-2xl font-bold">Stage. 05</p>
               <p class="text-xs md:text-lg text-white">(Post Q4)</p>
-              <p class="text-xs md:text-[16px] roboto mt-3">Continuous Growth & Expansion</p>
+              <p class="text-xs md:text-[16px] roboto mt-3">
+                Continuous Growth & Expansion
+              </p>
             </div>
           </div>
         </div>
@@ -558,7 +620,11 @@
     <section class="tokenomics py-20">
       <div class="container">
         <div class="text-center">
-          <h2 class="text-[30px] md:text-[60px] lg:text-[80px] font-bold text-sky mb-20">Tokenomics</h2>
+          <h2
+            class="text-[30px] md:text-[60px] lg:text-[80px] font-bold text-sky mb-20"
+          >
+            Tokenomics
+          </h2>
 
           <div
             class="card gap-[40px] md:gap-[100px] bg-[#2e2e2e] border-sky mt-10 p-[20px] md:p-[100px] rounded-[20px] overflow-hidden flex justify-between items-center gap-8 lg:flex-row flex-col-reverse"
@@ -568,7 +634,10 @@
                 <tr>
                   <td>
                     <i class="fa fa-check text-sky"></i>
-                    <span class="roboto md:text-[16px] text-sm italic font-semibold">Public Sale</span>
+                    <span
+                      class="roboto md:text-[16px] text-sm italic font-semibold"
+                      >Public Sale</span
+                    >
                   </td>
                   <td>
                     <span class="roboto text-2xl font-bold">40%</span>
@@ -577,7 +646,8 @@
                 <tr>
                   <td>
                     <i class="fa fa-check text-sky"></i>
-                    <span class="roboto md:text-[16px] text-sm italic font-semibold"
+                    <span
+                      class="roboto md:text-[16px] text-sm italic font-semibold"
                       >Community Round</span
                     >
                   </td>
@@ -588,7 +658,8 @@
                 <tr>
                   <td>
                     <i class="fa fa-check text-sky"></i>
-                    <span class="roboto md:text-[16px] text-sm italic font-semibold"
+                    <span
+                      class="roboto md:text-[16px] text-sm italic font-semibold"
                       >Additional app development</span
                     >
                   </td>
@@ -599,7 +670,10 @@
                 <tr>
                   <td>
                     <i class="fa fa-check text-sky"></i>
-                    <span class="roboto md:text-[16px] text-sm italic font-semibold">Marketing</span>
+                    <span
+                      class="roboto md:text-[16px] text-sm italic font-semibold"
+                      >Marketing</span
+                    >
                   </td>
                   <td>
                     <span class="roboto text-2xl font-bold">10%</span>
@@ -608,7 +682,8 @@
                 <tr>
                   <td>
                     <i class="fa fa-check text-sky"></i>
-                    <span class="roboto md:text-[16px] text-sm italic font-semibold"
+                    <span
+                      class="roboto md:text-[16px] text-sm italic font-semibold"
                       >App user rewards</span
                     >
                   </td>
@@ -619,7 +694,10 @@
                 <tr>
                   <td>
                     <i class="fa fa-check text-sky"></i>
-                    <span class="roboto md:text-[16px] text-sm italic font-semibold">Liquidity</span>
+                    <span
+                      class="roboto md:text-[16px] text-sm italic font-semibold"
+                      >Liquidity</span
+                    >
                   </td>
                   <td>
                     <span class="roboto text-2xl font-bold">10%</span>
@@ -628,7 +706,10 @@
                 <tr>
                   <td>
                     <i class="fa fa-check text-sky"></i>
-                    <span class="roboto md:text-[16px] text-sm italic font-semibold">Advisors</span>
+                    <span
+                      class="roboto md:text-[16px] text-sm italic font-semibold"
+                      >Advisors</span
+                    >
                   </td>
                   <td>
                     <span class="roboto text-2xl font-bold">10%</span>
@@ -637,7 +718,10 @@
                 <tr>
                   <td>
                     <i class="fa fa-check text-sky"></i>
-                    <span class="roboto md:text-[16px] text-sm italic font-semibold">Team</span>
+                    <span
+                      class="roboto md:text-[16px] text-sm italic font-semibold"
+                      >Team</span
+                    >
                   </td>
                   <td>
                     <span class="roboto text-2xl font-bold">6%</span>
@@ -646,7 +730,8 @@
                 <tr>
                   <td>
                     <i class="fa fa-check text-sky"></i>
-                    <span class="roboto md:text-[16px] text-sm italic font-semibold"
+                    <span
+                      class="roboto md:text-[16px] text-sm italic font-semibold"
                       >Founders round</span
                     >
                   </td>
@@ -676,7 +761,11 @@
     <section class="tokenadd py-20">
       <div class="container">
         <div class="text-center">
-          <h2 class="text-[30px] md:text-[60px] lg:text-[80px] font-bold text-white mb-20">Token ADD</h2>
+          <h2
+            class="text-[30px] md:text-[60px] lg:text-[80px] font-bold text-white mb-20"
+          >
+            Token ADD
+          </h2>
 
           <div class="mt-20 grid md:grid-cols-2 gap-[50px] md:gap-[100px]">
             <div class="left">

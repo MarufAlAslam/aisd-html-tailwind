@@ -97,3 +97,16 @@ item5.addEventListener("click", () => {
   removeActive();
   item5.classList.add("active");
 });
+
+
+const menuBtn = document.getElementById("menu-btn");
+const closeBtn = document.getElementById("close-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+  mobileMenu.classList.remove("active");
+});
