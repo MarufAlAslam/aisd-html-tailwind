@@ -3,6 +3,12 @@
     src: url("../fonts/supermilk.ttf");
 } */
 
+:root {
+    --w3m-accent-fill-color: #000 !important;
+    --w3m-accent-color: #0abab5 !important;
+    --w3m-color-overlay: transparent !important;
+  }
+
 * {
     font-family: 'Super Milk', sans-serif;
     letter-spacing: 2px;
@@ -40,6 +46,15 @@ body {
     cursor: pointer;
     transition: 0.3s;
 }
+.progressContainer {
+    background: #464646;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.date-holder{
+    background-color: #464646 !important;
+}
 
 .btn-dark {
     background-color: #414141;
@@ -52,7 +67,7 @@ body {
 }
 
 .roboto {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     line-height: normal;
 }
 
@@ -204,6 +219,41 @@ input[type="radio"]:checked+label {
 .tab,
 .mobile {
     display: none !important;
+}
+
+.nav-pills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-pills .nav-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #414141;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #0abab5;
+    color: white;
+}
+
+input[type="number"]{
+    appearance: none;
+}
+
+#pills-USDT, #pills-bnb{
+    display: none;
+}
+
+#pills-USDT.active, #pills-bnb.active{
+    display: block;
 }
 
 

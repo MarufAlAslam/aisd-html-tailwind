@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AISD</title>
 
-    
+
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -16,835 +17,884 @@
     <link href="https://fonts.cdnfonts.com/css/super-milk" rel="stylesheet" />
 
     <!-- fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/big.js/5.2.2/big.min.js"></script>
+    
     <!-- style css -->
     <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- nav -->
     <nav class="nav py-3">
-      <div class="container">
-        <div class="flex justify-between items-center gap-3">
-          <a href="./">
-            <img
-              src="img/logo.png"
-              alt="logo"
-              class="logo md:w-[200px] w-[120px]"
-            />
-          </a>
+        <div class="container">
+            <div class="flex justify-between items-center gap-3">
+                <a href="./">
+                    <img src="img/logo.png" alt="logo" class="logo md:w-[200px] w-[120px]" />
+                </a>
 
-          <ul class="flex justify-end items-center gap-[24px] tab-hide">
-            <a href="" class="text-white font-bold">AISD</a>
-            <a href="" class="text-white font-bold">Technologies</a>
-            <a href="" class="text-white font-bold">Roadmap</a>
-            <a href="" class="text-white font-bold">Tokenomics</a>
-            <a href="" class="text-white font-bold">White Paper</a>
-            <a href="" class="btn-sky font-bold">Connect Wallet</a>
-          </ul>
+                <ul class="flex justify-end items-center gap-[24px] tab-hide">
+                    <a href="" class="text-white font-bold">AISD</a>
+                    <a href="" class="text-white font-bold">Technologies</a>
+                    <a href="" class="text-white font-bold">Roadmap</a>
+                    <a href="" class="text-white font-bold">Tokenomics</a>
+                    <a href="" class="text-white font-bold">White Paper</a>
+                    <a href="" class="btn-sky font-bold">Connect Wallet</a>
+                </ul>
 
-          <div class="tab flex justify-end items-center gap-[24px] w-full">
-            <a href="" class="btn-sky font-bold lg:text-sm text-[8px]"
-              >Connect Wallet</a
-            >
-            <button class="menu-btn p-0" id="menu-btn">
-              <i class="fa fa-bars text-[20px]"></i>
-            </button>
-          </div>
+                <div class="tab flex justify-end items-center gap-[24px] w-full">
+                    <a href="" class="btn-sky font-bold lg:text-sm text-[8px]">Connect Wallet</a>
+                    <button class="menu-btn p-0" id="menu-btn">
+                        <i class="fa fa-bars text-[20px]"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
     </nav>
     <!-- nav -->
 
     <!-- mobile-menu -->
     <aside class="tab mobile-menu" id="mobile-menu">
-      <div class="container">
-        <div class="flex justify-between items-center gap-3">
-          <a href="./">
-            <img
-              src="img/logo.png"
-              alt="logo"
-              class="logo md:w-[200px] w-[120px]"
-            />
-          </a>
-
-          <div class="tab flex justify-end items-center gap-[24px] w-full">
-            <a href="" class="btn-sky font-bold lg:text-sm text-[8px]"
-              >Connect Wallet</a
-            >
-            <button class="menu-btn" id="close-btn">
-              <i class="fa fa-times text-[20px]"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="menus">
         <div class="container">
-          <ul class="flex flex-col gap-5">
-            <li>
-              <a href=""> Aisd </a>
-            </li>
-            <li>
-              <a href=""> Technologies </a>
-            </li>
-            <li>
-              <a href=""> Roadmap </a>
-            </li>
-            <li>
-              <a href=""> Tokenomics </a>
-            </li>
-            <li>
-              <a href=""> White Paper </a>
-            </li>
-          </ul>
+            <div class="flex justify-between items-center gap-3">
+                <a href="./">
+                    <img src="img/logo.png" alt="logo" class="logo md:w-[200px] w-[120px]" />
+                </a>
+
+                <div class="tab flex justify-end items-center gap-[24px] w-full">
+                    <a href="" class="btn-sky font-bold lg:text-sm text-[8px]">Connect Wallet</a>
+                    <button class="menu-btn" id="close-btn">
+                        <i class="fa fa-times text-[20px]"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="menus">
+            <div class="container">
+                <ul class="flex flex-col gap-5">
+                    <li>
+                        <a href=""> Aisd </a>
+                    </li>
+                    <li>
+                        <a href=""> Technologies </a>
+                    </li>
+                    <li>
+                        <a href=""> Roadmap </a>
+                    </li>
+                    <li>
+                        <a href=""> Tokenomics </a>
+                    </li>
+                    <li>
+                        <a href=""> White Paper </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </aside>
     <!-- mobile-menu -->
 
     <!-- hero -->
     <section class="hero py-[20px] md:py-20">
-      <div class="container">
-        <div
-          class="flex lg:flex-row flex-col justify-between items-center gap-[50px] md:gap-[150px]"
-        >
-          <div class="left">
-            <p
-              class="md:text-2xl text-lg text-white mb-2 lg:text-left text-center"
-            >
-              Meet, Trust, Earn
-            </p>
-            <h1
-              class="lg:text-[80px] md:text-[50px] text-[40px] text-white font-bold mb-4 lg:text-left text-center"
-            >
-              The future <br />
-              Of dating!
-            </h1>
-            <p class="roboto md:text-xl text-sm lg:text-left text-center">
-              Dating can be hard, especially in the digital age. You never
-              knowwho you are talking to, what their intentions are or if they
-              are even real. That’s why we created a new app that uses
-              blockchain and AI to verify the identity and authenticity of every
-              user. No more ph oto theft, no more catfishing, no more scams.
-              Just real connections and real rewards.
-            </p>
+        <div class="container">
+            <div class="flex lg:flex-row flex-col justify-between items-center gap-[50px] md:gap-[150px]">
+                <div class="left">
+                    <p class="md:text-2xl text-lg text-white mb-2 lg:text-left text-center">
+                        Meet, Trust, Earn
+                    </p>
+                    <h1
+                        class="lg:text-[80px] md:text-[50px] text-[40px] text-white font-bold mb-4 lg:text-left text-center">
+                        The future <br />
+                        Of dating!
+                    </h1>
+                    <p class="roboto md:text-xl text-sm lg:text-left text-center">
+                        Dating can be hard, especially in the digital age. You never
+                        knowwho you are talking to, what their intentions are or if they
+                        are even real. That’s why we created a new app that uses
+                        blockchain and AI to verify the identity and authenticity of every
+                        user. No more ph oto theft, no more catfishing, no more scams.
+                        Just real connections and real rewards.
+                    </p>
 
-            <div
-              class="flex mt-8 justify-center lg:justify-start md:flex-row flex-col items-center gap-5"
-            >
-              <a
-                href=""
-                class="btn-sky font-bold py-4 px-8 text-sm md:text-xl rounded-[10px] md:w-auto w-full text-center"
-              >
-                Download App
-              </a>
-              <a
-                href=""
-                class="btn-dark font-bold py-4 px-8 text-sm md:text-xl rounded-[10px] md:w-auto w-full text-center"
-              >
-                Look At Whitepaper
-              </a>
+                    <div class="flex mt-8 justify-center lg:justify-start md:flex-row flex-col items-center gap-5">
+                        <a href=""
+                            class="btn-sky font-bold py-4 px-8 text-sm md:text-xl rounded-[10px] md:w-auto w-full text-center">
+                            Download App
+                        </a>
+                        <a href=""
+                            class="btn-dark font-bold py-4 px-8 text-sm md:text-xl rounded-[10px] md:w-auto w-full text-center">
+                            Look At Whitepaper
+                        </a>
+                    </div>
+                </div>
+
+                <div class="right min-w-[440px] w-[440px] max-w-[100%] rounded-[15px] border-sky p-[40px] bg-[#2e2e2e]">
+                    <!-- <h3 class="text-2xl font-bold text-white text-center">
+                        AISD ICO Presale
+                    </h3>
+                    <p class="roboto text-center font-bold my-4 text-white">
+                        1 AISD = 0.000015$
+                    </p>
+
+                    <div class="progress bg-[#464646] rounded-[10px] overflow-hidden">
+                        <div class="progress-inner bg-[#0abab5] rounded-[10px] h-[25px] w-[50px]"></div>
+                    </div>
+
+                    <p class="roboto text-center font-bold my-4 text-white">
+                        Token Sold : X / 200,000,000,000
+                    </p>
+
+                    <form action="">
+                        <div class="date-holder bg-[#464646] px-8 py-3 rounded-[10px] text-white text-center">
+                            <p class="roboto font-semibold">152D : 8H : 24M : 30S</p>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 mt-3 mb-2">
+                            <div class="holder">
+                                <input type="radio" checked name="coin" value="BNB" id="bnb" />
+                                <label for="bnb" class="roboto cursor-pointer text-white">
+                                    <i class="fa fa-circle"></i>
+                                    <span class="roboto font-semibold">BNB</span>
+                                </label>
+                            </div>
+                            <div class="holder">
+                                <input type="radio" name="coin" value="USDT" id="usdt" />
+                                <label for="usdt" class="roboto cursor-pointer text-white">
+                                    <i class="fa fa-circle"></i>
+                                    <span class="roboto font-semibold">BNB</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <p class="text-[8px] mb-2 roboto font-bold">
+                            Amount in BNB You Pay:
+                        </p>
+
+                        <div class="flex gap-0 justify-between gap-2 rounded-[10px] items-center bg-[#464646] p-2">
+                            <input type="text" class="bg-[#464646] h-full outline-0 border-0 shadow-0 px-4 w-full m-0"
+                                name="" id="" />
+                            <div class="options flex gap-2 justify-end m-0 items-center">
+                                <span class="btn-sky text-sm rounded-full py-2">Max</span>
+                                <i class="fa fa-circle"></i>
+                            </div>
+                        </div>
+                        <p class="text-[8px] mb-2 mt-2 roboto font-bold">
+                            Amount in AISD You Receive:
+                        </p>
+
+                        <div class="flex gap-0 justify-between gap-2 rounded-[10px] items-center bg-[#464646] p-4">
+                            <input type="text" class="bg-[#464646] h-full outline-0 border-0 shadow-0 px-4 w-full m-0"
+                                name="" id="" />
+                        </div>
+
+                        <button class="btn-sky w-full mt-3 py-4 text-xl">Buy Now</button>
+                    </form> -->
+
+                    <div class="heroICOContainer" data-dashlane-rid="8d4658022aaeffe1" data-form-type="other"
+                        style="width: 100%; background-color: transparent">
+                        <div class="ICOCOntentArea">
+                            <h3 class="text-2xl font-bold text-white text-center">
+                                AISD ICO Presale
+                            </h3>
+                        </div>
+                        <div class="icoKscPricesContent my-4" style="margin-top: 15px; margin-bottom: 15px">
+
+                            <h6 class="text-center roboto  font-bold my-4 text-white" id="tokenPriceUsd">
+                                1 AISD = 0.0000015 $
+                            </h6>
+                        </div>
+                        <div class="progressContainer">
+                            <div class="progress">
+                                <div class="buyprogress1 progress-bar progress-bar-striped rounded-pill buyTokenPercentage"
+                                    role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="
+              width: 10%;
+              background: #0abab5;
+              height: 25px;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              padding-left: 5px;
+              font-size: 12px;
+            ">
+                                    0%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icoKscPricesContent my-4">
+                            <h6 class="text-center" style="display: none">
+                                USDT Raised: <span class="USDTRaised">$0</span>
+                            </h6>
+                            <h6 class="text-center roboto">
+                                Tokens Sold:
+                                <span class="TokensSold roboto">0 / 0</span>
+                            </h6>
+                        </div>
+                        <div style="
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          background-color: #464646;
+          width: 100%;
+          padding: 15px;
+          border-radius: 10px;
+        ">
+                            <!-- <div style="font-size: medium">Time Left :</div> -->
+                            <div id="time-bar-container" class="date-holder roboto">
+                                <div id="time-bar"></div>
+                                <div id="time-text" class="roboto">00d : 00h : 00m : 00s</div>
+                            </div>
+                        </div>
+                        <div id="saleCompleteBox" style="
+          display: none;
+          justify-content: space-evenly;
+          align-items: center;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        ">
+                            <!-- <div style="font-size: medium">Time Left :</div> -->
+                            <div style="
+            width: 100%;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #00b5af;
+            color: white;
+            text-align: center;
+            font-family: 'Titan One';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: larger;
+          ">
+                                Sold Out!
+                            </div>
+                        </div>
+
+                        <div class="bscANdBNBContainer pt-3">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="min-height: 70px">
+                                <li id="BNB" class="nav-item w-50" style="width: 100%">
+                                    <button style="width: 100%" class="nav-link buttonICOBNB active" id="pills-bnb-tab"
+                                        data-toggle="pill" href="#pills-bnb" role="tab" aria-controls="pills-bnb"
+                                        aria-selected="true">
+                                        <span><img src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=029"
+                                                width="25px" alt=""
+                                                style="padding-top: 3px; padding-bottom: 3px" /></span>
+                                        ETH
+                                    </button>
+                                </li>
+                                <div style="width: 30px"></div>
+                                <li id="BNBUSDT" class="nav-item w-50" style="width: 100%">
+                                    <button style="width: 100%" class="nav-link buttonICOBNB" id="pills-USDT-tab"
+                                        data-toggle="pill" href="#pills-USDT" role="tab" aria-controls="pills-USDT"
+                                        aria-selected="false">
+                                        <span><img src="https://cryptologos.cc/logos/tether-usdt-logo.png?v=029"
+                                                width="25px" alt=""
+                                                style="padding-top: 3px; padding-bottom: 3px" /></span>
+                                        USDT
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content my-4" id="pills-tabContent">
+                                <div class="tab-pane active show" id="pills-bnb" role="tabpanel"
+                                    aria-labelledby="pills-bnb-tab">
+                                    <div class="inputContainer">
+                                        <h6 class="text-[10px] roboto mb-1">Amount in <b
+                                                class="font-bold roboto">ETH</b> You Pay:</h6>
+
+                                        <div
+                                            class="inputContentArea position-relative flex gap-0 justify-between gap-2 rounded-[10px] items-center bg-[#464646] p-2">
+                                            <input type="number" name="" id="call2" placeholder="Enter Amount"
+                                                class="form-control border-0 outline-0 py-2 shadow-0 w-full appearence-none bg-transparent roboto inputControl max-bnb-balance"
+                                                data-dashlane-rid="27bad17943a002a1" data-form-type="other" />
+                                            <div class="maxOrImgContainer flex justify-end item-center gap-2">
+                                                <button id="max_token_1"
+                                                    class="btn-MAXBtn btn-sky text-sm rounded-full py-2"
+                                                    data-dashlane-rid="000aa7869c81a40a" data-form-type="other"
+                                                    data-dashlane-label="true">
+                                                    MAX
+                                                </button>
+                                                <span><img
+                                                        src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=029"
+                                                        class="min-w-[25px] w-[25px]" alt="" /></span>
+                                            </div>
+                                        </div>
+                                        <h6 class="text-[10px] roboto mb-1 mt-4">Amount in <b class="roboto">AISD</b>
+                                            You Receive:</h6>
+                                        <div
+                                            class="inputContentArea position-relative flex gap-0 justify-between gap-2 rounded-[10px] items-center bg-[#464646] p-2">
+                                            <input type="number" name="" id="exampleFormControlInput3" placeholder="0"
+                                                class="form-control inputControl border-0 outline-0 py-2 shadow-0 w-full appearence-none bg-transparent roboto"
+                                                data-dashlane-rid="a09ba2591f5db2e2" data-form-type="other" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="pills-USDT" role="tabpanel" aria-labelledby="pills-USDT-tab">
+                                    <div class="inputContainer">
+                                        <h6 class="text-[10px] roboto mb-1">Amount in <b class="roboto">USDT</b> You
+                                            Pay:</h6>
+
+                                        <div
+                                            class="inputContentArea position-relative flex gap-0 justify-between gap-2 rounded-[10px] items-center bg-[#464646] p-2">
+                                            <input type="number" name="" id="call1" placeholder="Enter Amount"
+                                                class="form-control border-0 outline-0 py-2 shadow-0 w-full appearence-none bg-transparent roboto inputControl max-bnb-usdt"
+                                                data-dashlane-rid="259f27be1ed606c2" />
+                                            <div class="maxOrImgContainer flex justify-end item-center gap-2">
+                                                <button id="max_token_2" class="btn-MAXBtn"
+                                                    data-dashlane-rid="0c11b4d951c91a8d">
+                                                    MAX
+                                                </button>
+                                                <span><img src="https://cryptologos.cc/logos/tether-usdt-logo.png?v=029"
+                                                        class="min-w-[25px] w-[25px]" alt="" /></span>
+                                            </div>
+                                        </div>
+                                        <h6 class="mt-4 roboto text-[10px] mb-1">Amount in <b class="roboto">AISD</b>
+                                            You Receive:</h6>
+                                        <div
+                                            class="inputContentArea position-relative flex gap-0 justify-between gap-2 rounded-[10px] items-center bg-[#464646] p-2">
+                                            <input type="number" name="" id="exampleFormControlInput4" placeholder="0"
+                                                class="form-control inputControl border-0 outline-0 py-2 shadow-0 w-full appearence-none bg-transparent roboto"
+                                                data-dashlane-rid="9c02c2be5cabe2bc" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contactButtonContainer">
+                            <div class="btn-ConnectWallet" id="w3-button"
+                                style="display: flex !important; justify-content: center">
+                                <w3m-core-button class="btn-sky w-full p-0 flex justify-center items-center connect-btn"
+                                    icon="hide" data-dashlane-shadowhost="true"
+                                    data-dashlane-observed="true"></w3m-core-button>
+                            </div>
+                            <button id="buy-button" class="btn-ConnectWallet btn-sky w-full">
+                                <div style="
+              align-items: center;
+              justify-content: center;
+              gap: 10px;
+              display: flex;
+            ">
+                                    <!-- <div style="display: none" id="loader" class="btn-sky w-full mt-3 py-4 text-xl">
+                                    </div> -->
+                                    Buy Now
+                                </div>
+                            </button>
+                            <div class="roboto text-[13px] mt-4" id="onlyUSDT">
+                                <b class="roboto">Note</b> : Approval requires up to two transaction signatures for
+                                USDT transactions.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <iframe src="ico.html" class="w-full h-[670px]" frameborder="0"></iframe> -->
+                </div>
             </div>
-          </div>
-
-          <div
-            class="right lg:min-w-[440px] lg:w-[440px] w-full max-w-[100%] rounded-[15px] border-sky bg-[#2e2e2e] overflow-hidden"
-          >
-            <!-- <h3 class="text-2xl font-bold text-white text-center">
-              AISD ICO Presale
-            </h3>
-            <p class="roboto text-center font-bold my-4 text-white">
-              1 AISD = 0.000015$
-            </p>
-
-            <div class="progress bg-[#464646] rounded-[10px] overflow-hidden">
-              <div
-                class="progress-inner bg-[#0abab5] rounded-[10px] h-[25px] w-[50px]"
-              ></div>
-            </div>
-
-            <p class="roboto text-center font-bold my-4 text-white">
-              Token Sold : X / 200,000,000,000
-            </p>
-
-            <form action="">
-              <div
-                class="date-holder bg-[#464646] px-8 py-3 rounded-[10px] text-white text-center"
-              >
-                <p class="roboto font-semibold">152D : 8H : 24M : 30S</p>
-              </div>
-
-              <div class="grid grid-cols-2 gap-3 mt-3 mb-2">
-                <div class="holder">
-                  <input
-                    type="radio"
-                    checked
-                    name="coin"
-                    value="BNB"
-                    id="bnb"
-                  />
-                  <label for="bnb" class="roboto cursor-pointer text-white">
-                    <i class="fa fa-circle"></i>
-                    <span class="roboto font-semibold">BNB</span>
-                  </label>
-                </div>
-                <div class="holder">
-                  <input type="radio" name="coin" value="USDT" id="usdt" />
-                  <label for="usdt" class="roboto cursor-pointer text-white">
-                    <i class="fa fa-circle"></i>
-                    <span class="roboto font-semibold">BNB</span>
-                  </label>
-                </div>
-              </div>
-
-              <p class="text-[8px] mb-2 roboto font-bold">
-                Amount in BNB You Pay:
-              </p>
-
-              <div
-                class="flex gap-0 justify-between gap-2 rounded-[10px] items-center bg-[#464646] p-2"
-              >
-                <input
-                  type="text"
-                  class="bg-[#464646] h-full outline-0 border-0 shadow-0 px-4 w-full m-0"
-                  name=""
-                  id=""
-                />
-                <div class="options flex gap-2 justify-end m-0 items-center">
-                  <span class="btn-sky text-sm rounded-full py-2">Max</span>
-                  <i class="fa fa-circle"></i>
-                </div>
-              </div>
-              <p class="text-[8px] mb-2 mt-2 roboto font-bold">
-                Amount in AISD You Receive:
-              </p>
-
-              <div
-                class="flex gap-0 justify-between gap-2 rounded-[10px] items-center bg-[#464646] p-4"
-              >
-                <input
-                  type="text"
-                  class="bg-[#464646] h-full outline-0 border-0 shadow-0 px-4 w-full m-0"
-                  name=""
-                  id=""
-                />
-              </div>
-
-              <button class="btn-sky w-full mt-3 py-4 text-xl">Buy Now</button>
-            </form> -->
-
-            <iframe src="ico.html" class="w-full h-[750px]" frameborder="0"></iframe>
-          </div>
         </div>
-      </div>
     </section>
     <!-- hero -->
 
     <!-- what is -->
     <section class="what-is py-20 md:py-40">
-      <div class="container">
-        <div
-          class="flex lg:flex-row flex-col justify-between items-center gap-[125px]"
-        >
-          <div class="left content active" id="left1">
-            <h2
-              class="lg:text-[60px] md:text-[45px] text-[30px] font-bold text-white lg:text-left text-center"
-            >
-              What is AISD?
-            </h2>
+        <div class="container">
+            <div class="flex lg:flex-row flex-col justify-between items-center gap-[125px]">
+                <div class="left content active" id="left1">
+                    <h2 class="lg:text-[60px] md:text-[45px] text-[30px] font-bold text-white lg:text-left text-center">
+                        What is AISD?
+                    </h2>
 
-            <p class="lg:text-left text-center text-sm md:text-xl roboto mt-4">
-              AISD is a revolutionary dating app that uses artificial
-              intelligence and blockchain techn ology to create a safe,
-              rewarding, and fun dating experience. AISD stands for AI Social
-              Dating, which reflects our vision of using AI to enhance social
-              interactions and create value for our users.
-            </p>
-          </div>
-          <div class="left content" id="left2">
-            <h2
-              class="text-[60px] font-bold text-white lg:text-left text-center"
-            >
-              What is AISD?
-            </h2>
+                    <p class="lg:text-left text-center text-sm md:text-xl roboto mt-4">
+                        AISD is a revolutionary dating app that uses artificial
+                        intelligence and blockchain techn ology to create a safe,
+                        rewarding, and fun dating experience. AISD stands for AI Social
+                        Dating, which reflects our vision of using AI to enhance social
+                        interactions and create value for our users.
+                    </p>
+                </div>
+                <div class="left content" id="left2">
+                    <h2 class="text-[60px] font-bold text-white lg:text-left text-center">
+                        What is AISD?
+                    </h2>
 
-            <p class="lg:text-left text-center text-xl roboto mt-4">
-              AISD is a revolutionary dating app that uses artificial
-              intelligence and blockchain techn ology to create a safe,
-              rewarding, and fun dating experience. AISD stands for AI Social
-              Dating, which reflects our vision of using AI to enhance social
-              interactions and create value for our users.
-            </p>
-          </div>
-          <div class="left content" id="left3">
-            <h2
-              class="text-[60px] font-bold text-white lg:text-left text-center"
-            >
-              What is AISD?
-            </h2>
+                    <p class="lg:text-left text-center text-xl roboto mt-4">
+                        AISD is a revolutionary dating app that uses artificial
+                        intelligence and blockchain techn ology to create a safe,
+                        rewarding, and fun dating experience. AISD stands for AI Social
+                        Dating, which reflects our vision of using AI to enhance social
+                        interactions and create value for our users.
+                    </p>
+                </div>
+                <div class="left content" id="left3">
+                    <h2 class="text-[60px] font-bold text-white lg:text-left text-center">
+                        What is AISD?
+                    </h2>
 
-            <p class="lg:text-left text-center text-xl roboto mt-4">
-              AISD is a revolutionary dating app that uses artificial
-              intelligence and blockchain techn ology to create a safe,
-              rewarding, and fun dating experience. AISD stands for AI Social
-              Dating, which reflects our vision of using AI to enhance social
-              interactions and create value for our users.
-            </p>
-          </div>
-          <div class="left content" id="left4">
-            <h2
-              class="text-[60px] font-bold text-white lg:text-left text-center"
-            >
-              What is AISD?
-            </h2>
+                    <p class="lg:text-left text-center text-xl roboto mt-4">
+                        AISD is a revolutionary dating app that uses artificial
+                        intelligence and blockchain techn ology to create a safe,
+                        rewarding, and fun dating experience. AISD stands for AI Social
+                        Dating, which reflects our vision of using AI to enhance social
+                        interactions and create value for our users.
+                    </p>
+                </div>
+                <div class="left content" id="left4">
+                    <h2 class="text-[60px] font-bold text-white lg:text-left text-center">
+                        What is AISD?
+                    </h2>
 
-            <p class="lg:text-left text-center text-xl roboto mt-4">
-              AISD is a revolutionary dating app that uses artificial
-              intelligence and blockchain techn ology to create a safe,
-              rewarding, and fun dating experience. AISD stands for AI Social
-              Dating, which reflects our vision of using AI to enhance social
-              interactions and create value for our users.
-            </p>
-          </div>
-          <div class="left content" id="left5">
-            <h2
-              class="text-[60px] font-bold text-white lg:text-left text-center"
-            >
-              What is AISD?
-            </h2>
+                    <p class="lg:text-left text-center text-xl roboto mt-4">
+                        AISD is a revolutionary dating app that uses artificial
+                        intelligence and blockchain techn ology to create a safe,
+                        rewarding, and fun dating experience. AISD stands for AI Social
+                        Dating, which reflects our vision of using AI to enhance social
+                        interactions and create value for our users.
+                    </p>
+                </div>
+                <div class="left content" id="left5">
+                    <h2 class="text-[60px] font-bold text-white lg:text-left text-center">
+                        What is AISD?
+                    </h2>
 
-            <p class="lg:text-left text-center text-xl roboto mt-4">
-              AISD is a revolutionary dating app that uses artificial
-              intelligence and blockchain techn ology to create a safe,
-              rewarding, and fun dating experience. AISD stands for AI Social
-              Dating, which reflects our vision of using AI to enhance social
-              interactions and create value for our users.
-            </p>
-          </div>
+                    <p class="lg:text-left text-center text-xl roboto mt-4">
+                        AISD is a revolutionary dating app that uses artificial
+                        intelligence and blockchain techn ology to create a safe,
+                        rewarding, and fun dating experience. AISD stands for AI Social
+                        Dating, which reflects our vision of using AI to enhance social
+                        interactions and create value for our users.
+                    </p>
+                </div>
 
-          <div class="right content active" id="right1">
-            <div class="img-holder relative">
-              <img
-                src="img/1.png"
-                class="team-img md:min-w-[320px] relative z-20 left-[-20px] md:max-w-[320px] w-[60%]"
-                alt=""
-              />
-              <img
-                src="img/2.png"
-                class="team-img absolute bottom-0 left-[55px] md:left-0 rotated md:min-w-[320px] md:max-w-[320px] w-[60%]"
-                alt=""
-              />
+                <div class="right content active" id="right1">
+                    <div class="img-holder relative">
+                        <img src="img/1.png"
+                            class="team-img md:min-w-[320px] relative z-20 left-[-20px] md:max-w-[320px] w-[60%]"
+                            alt="" />
+                        <img src="img/2.png"
+                            class="team-img absolute bottom-0 left-[55px] md:left-0 rotated md:min-w-[320px] md:max-w-[320px] w-[60%]"
+                            alt="" />
+                    </div>
+                </div>
+                <div class="right content" id="right2">
+                    <div class="img-holder relative">
+                        <img src="img/3.png"
+                            class="team-img md:min-w-[320px] relative z-20 left-[-20px] md:max-w-[320px] w-[60%]"
+                            alt="" />
+                        <img src="img/4.png"
+                            class="team-img absolute bottom-0 left-[55px] md:left-0 rotated md:min-w-[320px] md:max-w-[320px] w-[60%]"
+                            alt="" />
+                    </div>
+                </div>
+                <div class="right content" id="right3">
+                    <div class="img-holder relative">
+                        <img src="img/5.png"
+                            class="team-img md:min-w-[320px] relative z-20 left-[-20px] md:max-w-[320px] w-[60%]"
+                            alt="" />
+                        <img src="img/6.png"
+                            class="team-img absolute bottom-0 left-[55px] md:left-0 rotated md:min-w-[320px] md:max-w-[320px] w-[60%]"
+                            alt="" />
+                    </div>
+                </div>
+                <div class="right content" id="right4">
+                    <div class="img-holder relative">
+                        <img src="img/7.png"
+                            class="team-img md:min-w-[320px] relative z-20 left-[-20px] md:max-w-[320px] w-[60%]"
+                            alt="" />
+                        <img src="img/8.png"
+                            class="team-img absolute bottom-0 left-[55px] md:left-0 rotated md:min-w-[320px] md:max-w-[320px] w-[60%]"
+                            alt="" />
+                    </div>
+                </div>
+                <div class="right content" id="right5">
+                    <div class="img-holder relative">
+                        <img src="img/9.png"
+                            class="team-img md:min-w-[320px] relative z-20 left-[-20px] md:max-w-[320px] w-[60%]"
+                            alt="" />
+                        <img src="img/10.png"
+                            class="team-img absolute bottom-0 left-[55px] md:left-0 rotated md:min-w-[320px] md:max-w-[320px] w-[60%]"
+                            alt="" />
+                    </div>
+                </div>
+
+                <div class="navigator flex flex-row lg:flex-col justify-center items-center gap-5">
+                    <button class="active">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                </div>
             </div>
-          </div>
-          <div class="right content" id="right2">
-            <div class="img-holder relative">
-              <img
-                src="img/3.png"
-                class="team-img md:min-w-[320px] relative z-20 left-[-20px] md:max-w-[320px] w-[60%]"
-                alt=""
-              />
-              <img
-                src="img/4.png"
-                class="team-img absolute bottom-0 left-[55px] md:left-0 rotated md:min-w-[320px] md:max-w-[320px] w-[60%]"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="right content" id="right3">
-            <div class="img-holder relative">
-              <img
-                src="img/5.png"
-                class="team-img md:min-w-[320px] relative z-20 left-[-20px] md:max-w-[320px] w-[60%]"
-                alt=""
-              />
-              <img
-                src="img/6.png"
-                class="team-img absolute bottom-0 left-[55px] md:left-0 rotated md:min-w-[320px] md:max-w-[320px] w-[60%]"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="right content" id="right4">
-            <div class="img-holder relative">
-              <img
-                src="img/7.png"
-                class="team-img md:min-w-[320px] relative z-20 left-[-20px] md:max-w-[320px] w-[60%]"
-                alt=""
-              />
-              <img
-                src="img/8.png"
-                class="team-img absolute bottom-0 left-[55px] md:left-0 rotated md:min-w-[320px] md:max-w-[320px] w-[60%]"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="right content" id="right5">
-            <div class="img-holder relative">
-              <img
-                src="img/9.png"
-                class="team-img md:min-w-[320px] relative z-20 left-[-20px] md:max-w-[320px] w-[60%]"
-                alt=""
-              />
-              <img
-                src="img/10.png"
-                class="team-img absolute bottom-0 left-[55px] md:left-0 rotated md:min-w-[320px] md:max-w-[320px] w-[60%]"
-                alt=""
-              />
-            </div>
-          </div>
-
-          <div
-            class="navigator flex flex-row lg:flex-col justify-center items-center gap-5"
-          >
-            <button class="active">1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-          </div>
         </div>
-      </div>
     </section>
     <!-- what is -->
 
     <!-- meet trust earn -->
     <section class="meet-trust-earn py-[20px] md:py-40">
-      <div class="container">
-        <p class="text-2xl mb-3 text-center">Meet, Trust, Earn</p>
-        <div class="lg:w-[80%] mx-auto text-center m-content active">
-          <div class="text-center">
-            <h2
-              class="text-sky text-[60px] md:text-[90px] font-bold"
-              id="title"
-            >
-              Meet
-            </h2>
-          </div>
-          <p class="text-lg md:text-xl roboto mt-5">
-            Our app is the first and only dating app that uses AI technology to
-            verify the identity and authenticity of every user. You can be sure
-            that the person you see on the screen is the same person you will
-            meet in real life. No more catfishing, no more fraud, no more
-            disappointment.
-          </p>
-        </div>
+        <div class="container">
+            <p class="text-2xl mb-3 text-center">Meet, Trust, Earn</p>
+            <div class="lg:w-[80%] mx-auto text-center m-content active">
+                <div class="text-center">
+                    <h2 class="text-sky text-[60px] md:text-[90px] font-bold" id="title">
+                        Meet
+                    </h2>
+                </div>
+                <p class="text-lg md:text-xl roboto mt-5">
+                    Our app is the first and only dating app that uses AI technology to
+                    verify the identity and authenticity of every user. You can be sure
+                    that the person you see on the screen is the same person you will
+                    meet in real life. No more catfishing, no more fraud, no more
+                    disappointment.
+                </p>
+            </div>
 
-        <div
-          class="flex md:w-1/2 mt-10 mx-auto bg-[#414141] p-3 gap-3 rounded-[10px] flex justify-between items-center"
-        >
-          <button class="w-full rounded-[10px] py-3 active tab-btn">
-            MEET
-          </button>
-          <button class="w-full rounded-[10px] py-3 tab-btn">Trust</button>
-          <button class="w-full rounded-[10px] py-3 tab-btn">Earn</button>
+            <div
+                class="flex md:w-1/2 mt-10 mx-auto bg-[#414141] p-3 gap-3 rounded-[10px] flex justify-between items-center">
+                <button class="w-full rounded-[10px] py-3 active tab-btn">
+                    MEET
+                </button>
+                <button class="w-full rounded-[10px] py-3 tab-btn">Trust</button>
+                <button class="w-full rounded-[10px] py-3 tab-btn">Earn</button>
+            </div>
         </div>
-      </div>
     </section>
     <!-- meet trust earn -->
 
     <!-- technologies -->
     <section class="techs pb-20 pt-10">
-      <div class="container">
-        <div class="text-center">
-          <h2
-            class="lg:text-[80px] md:text-[60px] text-[30px] font-bold text-white mb-20"
-          >
-            Technologies
-          </h2>
+        <div class="container">
+            <div class="text-center">
+                <h2 class="lg:text-[80px] md:text-[60px] text-[30px] font-bold text-white mb-20">
+                    Technologies
+                </h2>
 
-          <div class="grid lg:grid-cols-3 grid-cols-2 gap-[20px] md:gap-[50px]">
-            <div
-              class="card overflow-hidden cursor-pointer relative bg-[#414141] p-[20px] rounded-[20px] text-lg md:text-3xl h-[175px] md:h-[400px] flex justify-center items-center"
-            >
-              <span>Profile verification</span>
-              <div
-                class="card-body flex justify-center items-center p-[10px] md:p-[25px] rounded-[20px] absolute h-full w-full bg-sky top-0 left-0 z-10"
-              >
-                <p class="roboto text-[8px] md:text-lg">
-                  Our app harnesses the power of Artifici al Intelligence (AI)
-                  and Blockchain tech nology to revolutionize the dating expe
-                  rience. Bycombining these cutting-edge technologies, we ensure
-                  a safe, authent ic, and rewarding platform for our users.
-                </p>
-              </div>
+                <div class="grid lg:grid-cols-3 grid-cols-2 gap-[20px] md:gap-[50px]">
+                    <div
+                        class="card overflow-hidden cursor-pointer relative bg-[#414141] p-[20px] rounded-[20px] text-lg md:text-3xl h-[175px] md:h-[400px] flex justify-center items-center">
+                        <span>Profile verification</span>
+                        <div
+                            class="card-body flex justify-center items-center p-[10px] md:p-[25px] rounded-[20px] absolute h-full w-full bg-sky top-0 left-0 z-10">
+                            <p class="roboto text-[8px] md:text-lg">
+                                Our app harnesses the power of Artifici al Intelligence (AI)
+                                and Blockchain tech nology to revolutionize the dating expe
+                                rience. Bycombining these cutting-edge technologies, we ensure
+                                a safe, authent ic, and rewarding platform for our users.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="card overflow-hidden cursor-pointer relative bg-[#414141] p-[20px] rounded-[20px] text-lg md:text-3xl h-[175px] md:h-[400px] flex justify-center items-center">
+                        <span>Behavior analysis</span>
+                        <div
+                            class="card-body flex justify-center items-center p-[10px] md:p-[25px] rounded-[20px] absolute h-full w-full bg-sky top-0 left-0 z-10">
+                            <p class="roboto text-[8px] md:text-lg">
+                                Our app harnesses the power of Artifici al Intelligence (AI)
+                                and Blockchain tech nology to revolutionize the dating expe
+                                rience. Bycombining these cutting-edge technologies, we ensure
+                                a safe, authent ic, and rewarding platform for our users.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="card overflow-hidden cursor-pointer relative bg-[#414141] p-[20px] rounded-[20px] text-lg md:text-3xl h-[175px] md:h-[400px] flex justify-center items-center">
+                        <span>Crypto Currency Integration</span>
+                        <div
+                            class="card-body flex justify-center items-center p-[10px] md:p-[25px] rounded-[20px] absolute h-full w-full bg-sky top-0 left-0 z-10">
+                            <p class="roboto text-[8px] md:text-lg">
+                                Our app harnesses the power of Artifici al Intelligence (AI)
+                                and Blockchain tech nology to revolutionize the dating expe
+                                rience. Bycombining these cutting-edge technologies, we ensure
+                                a safe, authent ic, and rewarding platform for our users.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="card overflow-hidden cursor-pointer relative bg-[#414141] p-[20px] rounded-[20px] text-lg md:text-3xl h-[175px] md:h-[400px] flex justify-center items-center">
+                        <span>Crypto drop & cash out system</span>
+                        <div
+                            class="card-body flex justify-center items-center p-[10px] md:p-[25px] rounded-[20px] absolute h-full w-full bg-sky top-0 left-0 z-10">
+                            <p class="roboto text-[8px] md:text-lg">
+                                Our app harnesses the power of Artifici al Intelligence (AI)
+                                and Blockchain tech nology to revolutionize the dating expe
+                                rience. Bycombining these cutting-edge technologies, we ensure
+                                a safe, authent ic, and rewarding platform for our users.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="card overflow-hidden cursor-pointer relative bg-[#414141] p-[20px] rounded-[20px] text-lg md:text-3xl h-[175px] md:h-[400px] flex justify-center items-center">
+                        <span>Scalable Technical Infrastructure </span>
+                        <div
+                            class="card-body flex justify-center items-center p-[10px] md:p-[25px] rounded-[20px] absolute h-full w-full bg-sky top-0 left-0 z-10">
+                            <p class="roboto text-[8px] md:text-lg">
+                                Our app harnesses the power of Artifici al Intelligence (AI)
+                                and Blockchain tech nology to revolutionize the dating expe
+                                rience. Bycombining these cutting-edge technologies, we ensure
+                                a safe, authent ic, and rewarding platform for our users.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="card overflow-hidden cursor-pointer relative bg-[#414141] p-[20px] rounded-[20px] text-lg md:text-3xl h-[175px] md:h-[400px] flex justify-center items-center">
+                        <span>Profile verification</span>
+                        <div
+                            class="card-body flex justify-center items-center p-[10px] md:p-[25px] rounded-[20px] absolute h-full w-full bg-sky top-0 left-0 z-10">
+                            <p class="roboto text-[8px] md:text-lg">
+                                Our app harnesses the power of Artifici al Intelligence (AI)
+                                and Blockchain tech nology to revolutionize the dating expe
+                                rience. Bycombining these cutting-edge technologies, we ensure
+                                a safe, authent ic, and rewarding platform for our users.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div
-              class="card overflow-hidden cursor-pointer relative bg-[#414141] p-[20px] rounded-[20px] text-lg md:text-3xl h-[175px] md:h-[400px] flex justify-center items-center"
-            >
-              <span>Behavior analysis</span>
-              <div
-                class="card-body flex justify-center items-center p-[10px] md:p-[25px] rounded-[20px] absolute h-full w-full bg-sky top-0 left-0 z-10"
-              >
-                <p class="roboto text-[8px] md:text-lg">
-                  Our app harnesses the power of Artifici al Intelligence (AI)
-                  and Blockchain tech nology to revolutionize the dating expe
-                  rience. Bycombining these cutting-edge technologies, we ensure
-                  a safe, authent ic, and rewarding platform for our users.
-                </p>
-              </div>
-            </div>
-            <div
-              class="card overflow-hidden cursor-pointer relative bg-[#414141] p-[20px] rounded-[20px] text-lg md:text-3xl h-[175px] md:h-[400px] flex justify-center items-center"
-            >
-              <span>Crypto Currency Integration</span>
-              <div
-                class="card-body flex justify-center items-center p-[10px] md:p-[25px] rounded-[20px] absolute h-full w-full bg-sky top-0 left-0 z-10"
-              >
-                <p class="roboto text-[8px] md:text-lg">
-                  Our app harnesses the power of Artifici al Intelligence (AI)
-                  and Blockchain tech nology to revolutionize the dating expe
-                  rience. Bycombining these cutting-edge technologies, we ensure
-                  a safe, authent ic, and rewarding platform for our users.
-                </p>
-              </div>
-            </div>
-            <div
-              class="card overflow-hidden cursor-pointer relative bg-[#414141] p-[20px] rounded-[20px] text-lg md:text-3xl h-[175px] md:h-[400px] flex justify-center items-center"
-            >
-              <span>Crypto drop & cash out system</span>
-              <div
-                class="card-body flex justify-center items-center p-[10px] md:p-[25px] rounded-[20px] absolute h-full w-full bg-sky top-0 left-0 z-10"
-              >
-                <p class="roboto text-[8px] md:text-lg">
-                  Our app harnesses the power of Artifici al Intelligence (AI)
-                  and Blockchain tech nology to revolutionize the dating expe
-                  rience. Bycombining these cutting-edge technologies, we ensure
-                  a safe, authent ic, and rewarding platform for our users.
-                </p>
-              </div>
-            </div>
-            <div
-              class="card overflow-hidden cursor-pointer relative bg-[#414141] p-[20px] rounded-[20px] text-lg md:text-3xl h-[175px] md:h-[400px] flex justify-center items-center"
-            >
-              <span>Scalable Technical Infrastructure </span>
-              <div
-                class="card-body flex justify-center items-center p-[10px] md:p-[25px] rounded-[20px] absolute h-full w-full bg-sky top-0 left-0 z-10"
-              >
-                <p class="roboto text-[8px] md:text-lg">
-                  Our app harnesses the power of Artifici al Intelligence (AI)
-                  and Blockchain tech nology to revolutionize the dating expe
-                  rience. Bycombining these cutting-edge technologies, we ensure
-                  a safe, authent ic, and rewarding platform for our users.
-                </p>
-              </div>
-            </div>
-            <div
-              class="card overflow-hidden cursor-pointer relative bg-[#414141] p-[20px] rounded-[20px] text-lg md:text-3xl h-[175px] md:h-[400px] flex justify-center items-center"
-            >
-              <span>Profile verification</span>
-              <div
-                class="card-body flex justify-center items-center p-[10px] md:p-[25px] rounded-[20px] absolute h-full w-full bg-sky top-0 left-0 z-10"
-              >
-                <p class="roboto text-[8px] md:text-lg">
-                  Our app harnesses the power of Artifici al Intelligence (AI)
-                  and Blockchain tech nology to revolutionize the dating expe
-                  rience. Bycombining these cutting-edge technologies, we ensure
-                  a safe, authent ic, and rewarding platform for our users.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
     <!-- technologies -->
 
     <!-- roadmap -->
     <section class="roadmap py-[10px] md:py-20">
-      <div class="container">
-        <div class="text-center">
-          <h2
-            class="lg:text-[80px] md:text-[60px] text-[30px] font-bold text-white mb-20"
-          >
-            Roadmap
-          </h2>
+        <div class="container">
+            <div class="text-center">
+                <h2 class="lg:text-[80px] md:text-[60px] text-[30px] font-bold text-white mb-20">
+                    Roadmap
+                </h2>
 
-          <div class="indicator relative mt-[20px]">
-            <div class="circle" id="circle"></div>
-            <div class="line"></div>
-          </div>
+                <div class="indicator relative mt-[20px]">
+                    <div class="circle" id="circle"></div>
+                    <div class="line"></div>
+                </div>
 
-          <div
-            class="grid mt-20 lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-[20px] md:gap-[40px]"
-          >
-            <div id="item1" class="item p-[20px] rounded-[20px] cursor-pointer">
-              <p class="text-[16px] md:text-2xl font-bold">Stage. 01</p>
-              <p class="text-xs md:text-lg text-white">(Q1 - Q2)</p>
-              <p class="text-xs md:text-[16px] roboto mt-3">
-                Coin Launch & Dating App Development
-              </p>
+                <div class="grid mt-20 lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-[20px] md:gap-[40px]">
+                    <div id="item1" class="item p-[20px] rounded-[20px] cursor-pointer">
+                        <p class="text-[16px] md:text-2xl font-bold">Stage. 01</p>
+                        <p class="text-xs md:text-lg text-white">(Q1 - Q2)</p>
+                        <p class="text-xs md:text-[16px] roboto mt-3">
+                            Coin Launch & Dating App Development
+                        </p>
+                    </div>
+                    <div id="item2" class="item p-[20px] rounded-[20px] cursor-pointer">
+                        <p class="text-[16px] md:text-2xl font-bold">Stage. 02</p>
+                        <p class="text-xs md:text-lg text-white">(Q2 - Q3)</p>
+                        <p class="text-xs md:text-[16px] roboto mt-3">
+                            Funding & Marketing
+                        </p>
+                    </div>
+                    <div id="item3" class="item p-[20px] rounded-[20px] cursor-pointer">
+                        <p class="text-[16px] md:text-2xl font-bold">Stage. 03</p>
+                        <p class="text-xs md:text-lg text-white">(Q3)</p>
+                        <p class="text-xs md:text-[16px] roboto mt-3">
+                            Internal Validation & Testing
+                        </p>
+                    </div>
+                    <div id="item4" class="item p-[20px] rounded-[20px] cursor-pointer">
+                        <p class="text-[16px] md:text-2xl font-bold">Stage. 04</p>
+                        <p class="text-xs md:text-lg text-white">(Q4)</p>
+                        <p class="text-xs md:text-[16px] roboto mt-3">
+                            Beta Launch of Dating App
+                        </p>
+                    </div>
+                    <div id="item5" class="item p-[20px] rounded-[20px] cursor-pointer">
+                        <p class="text-[16px] md:text-2xl font-bold">Stage. 05</p>
+                        <p class="text-xs md:text-lg text-white">(Post Q4)</p>
+                        <p class="text-xs md:text-[16px] roboto mt-3">
+                            Continuous Growth & Expansion
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div id="item2" class="item p-[20px] rounded-[20px] cursor-pointer">
-              <p class="text-[16px] md:text-2xl font-bold">Stage. 02</p>
-              <p class="text-xs md:text-lg text-white">(Q2 - Q3)</p>
-              <p class="text-xs md:text-[16px] roboto mt-3">
-                Funding & Marketing
-              </p>
-            </div>
-            <div id="item3" class="item p-[20px] rounded-[20px] cursor-pointer">
-              <p class="text-[16px] md:text-2xl font-bold">Stage. 03</p>
-              <p class="text-xs md:text-lg text-white">(Q3)</p>
-              <p class="text-xs md:text-[16px] roboto mt-3">
-                Internal Validation & Testing
-              </p>
-            </div>
-            <div id="item4" class="item p-[20px] rounded-[20px] cursor-pointer">
-              <p class="text-[16px] md:text-2xl font-bold">Stage. 04</p>
-              <p class="text-xs md:text-lg text-white">(Q4)</p>
-              <p class="text-xs md:text-[16px] roboto mt-3">
-                Beta Launch of Dating App
-              </p>
-            </div>
-            <div id="item5" class="item p-[20px] rounded-[20px] cursor-pointer">
-              <p class="text-[16px] md:text-2xl font-bold">Stage. 05</p>
-              <p class="text-xs md:text-lg text-white">(Post Q4)</p>
-              <p class="text-xs md:text-[16px] roboto mt-3">
-                Continuous Growth & Expansion
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
     <!-- roadmap -->
 
     <!-- tokenomics -->
     <section class="tokenomics py-[20px] md:py-20">
-      <div class="container">
-        <div class="text-center">
-          <h2
-            class="text-[30px] md:text-[60px] lg:text-[80px] font-bold text-sky mb-20"
-          >
-            Tokenomics
-          </h2>
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-[30px] md:text-[60px] lg:text-[80px] font-bold text-sky mb-20">
+                    Tokenomics
+                </h2>
 
-          <div
-            class="card gap-[40px] md:gap-[100px] bg-[#2e2e2e] border-sky mt-10 p-[20px] md:p-[100px] rounded-[20px] overflow-hidden flex justify-between items-center gap-8 lg:flex-row flex-col-reverse"
-          >
-            <div class="left w-full text-left">
-              <table class="w-full table">
-                <tr>
-                  <td>
-                    <i class="fa fa-check text-sky"></i>
-                    <span
-                      class="roboto md:text-[16px] text-sm italic font-semibold"
-                      >Public Sale</span
-                    >
-                  </td>
-                  <td>
-                    <span class="roboto text-2xl font-bold">40%</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <i class="fa fa-check text-sky"></i>
-                    <span
-                      class="roboto md:text-[16px] text-sm italic font-semibold"
-                      >Community Round</span
-                    >
-                  </td>
-                  <td>
-                    <span class="roboto text-2xl font-bold">6%</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <i class="fa fa-check text-sky"></i>
-                    <span
-                      class="roboto md:text-[16px] text-sm italic font-semibold"
-                      >Additional app development</span
-                    >
-                  </td>
-                  <td>
-                    <span class="roboto text-2xl font-bold">10%</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <i class="fa fa-check text-sky"></i>
-                    <span
-                      class="roboto md:text-[16px] text-sm italic font-semibold"
-                      >Marketing</span
-                    >
-                  </td>
-                  <td>
-                    <span class="roboto text-2xl font-bold">10%</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <i class="fa fa-check text-sky"></i>
-                    <span
-                      class="roboto md:text-[16px] text-sm italic font-semibold"
-                      >App user rewards</span
-                    >
-                  </td>
-                  <td>
-                    <span class="roboto text-2xl font-bold">10%</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <i class="fa fa-check text-sky"></i>
-                    <span
-                      class="roboto md:text-[16px] text-sm italic font-semibold"
-                      >Liquidity</span
-                    >
-                  </td>
-                  <td>
-                    <span class="roboto text-2xl font-bold">10%</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <i class="fa fa-check text-sky"></i>
-                    <span
-                      class="roboto md:text-[16px] text-sm italic font-semibold"
-                      >Advisors</span
-                    >
-                  </td>
-                  <td>
-                    <span class="roboto text-2xl font-bold">10%</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <i class="fa fa-check text-sky"></i>
-                    <span
-                      class="roboto md:text-[16px] text-sm italic font-semibold"
-                      >Team</span
-                    >
-                  </td>
-                  <td>
-                    <span class="roboto text-2xl font-bold">6%</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <i class="fa fa-check text-sky"></i>
-                    <span
-                      class="roboto md:text-[16px] text-sm italic font-semibold"
-                      >Founders round</span
-                    >
-                  </td>
-                  <td>
-                    <span class="roboto text-2xl font-bold">7%</span>
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <div class="left w-full">
-              <img src="img/chart.png" class="w-full" alt="" />
+                <div
+                    class="card gap-[40px] md:gap-[100px] bg-[#2e2e2e] border-sky mt-10 p-[20px] md:p-[100px] rounded-[20px] overflow-hidden flex justify-between items-center gap-8 lg:flex-row flex-col-reverse">
+                    <div class="left w-full text-left">
+                        <table class="w-full table">
+                            <tr>
+                                <td>
+                                    <i class="fa fa-check text-sky"></i>
+                                    <span class="roboto md:text-[16px] text-sm italic font-semibold">Public Sale</span>
+                                </td>
+                                <td>
+                                    <span class="roboto text-2xl font-bold">40%</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-check text-sky"></i>
+                                    <span class="roboto md:text-[16px] text-sm italic font-semibold">Community
+                                        Round</span>
+                                </td>
+                                <td>
+                                    <span class="roboto text-2xl font-bold">6%</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-check text-sky"></i>
+                                    <span class="roboto md:text-[16px] text-sm italic font-semibold">Additional app
+                                        development</span>
+                                </td>
+                                <td>
+                                    <span class="roboto text-2xl font-bold">10%</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-check text-sky"></i>
+                                    <span class="roboto md:text-[16px] text-sm italic font-semibold">Marketing</span>
+                                </td>
+                                <td>
+                                    <span class="roboto text-2xl font-bold">10%</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-check text-sky"></i>
+                                    <span class="roboto md:text-[16px] text-sm italic font-semibold">App user
+                                        rewards</span>
+                                </td>
+                                <td>
+                                    <span class="roboto text-2xl font-bold">10%</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-check text-sky"></i>
+                                    <span class="roboto md:text-[16px] text-sm italic font-semibold">Liquidity</span>
+                                </td>
+                                <td>
+                                    <span class="roboto text-2xl font-bold">10%</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-check text-sky"></i>
+                                    <span class="roboto md:text-[16px] text-sm italic font-semibold">Advisors</span>
+                                </td>
+                                <td>
+                                    <span class="roboto text-2xl font-bold">10%</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-check text-sky"></i>
+                                    <span class="roboto md:text-[16px] text-sm italic font-semibold">Team</span>
+                                </td>
+                                <td>
+                                    <span class="roboto text-2xl font-bold">6%</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa fa-check text-sky"></i>
+                                    <span class="roboto md:text-[16px] text-sm italic font-semibold">Founders
+                                        round</span>
+                                </td>
+                                <td>
+                                    <span class="roboto text-2xl font-bold">7%</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="left w-full">
+                        <img src="img/chart.png" class="w-full" alt="" />
 
-              <div class="text-center mt-4">
-                <p class="roboto">MAX TOTAL SUPPLY</p>
-                <p class="roboto text-lg font-semibold">
-                  250,000,000,000,000(AISD)
-                </p>
-              </div>
+                        <div class="text-center mt-4">
+                            <p class="roboto">MAX TOTAL SUPPLY</p>
+                            <p class="roboto text-lg font-semibold">
+                                250,000,000,000,000(AISD)
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
     <!-- tokenomics -->
 
     <!-- token add -->
     <section class="tokenadd py-20">
-      <div class="container">
-        <div class="text-center">
-          <h2
-            class="text-[30px] md:text-[60px] lg:text-[80px] font-bold text-white mb-20"
-          >
-            Token ADD
-          </h2>
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-[30px] md:text-[60px] lg:text-[80px] font-bold text-white mb-20">
+                    Token ADD
+                </h2>
 
-          <div class="mt-20 grid md:grid-cols-2 gap-[50px] md:gap-[100px]">
-            <div class="left">
-              <h3 class="text-lg md:text-4xl">Copy address</h3>
-              <img
-                src="img/bigLogo.png"
-                class="my-10 w-[200px] block mx-auto"
-                alt=""
-              />
-              <button class="btn-sky px-10 py-4 text-sm md:text-xl">
-                Copy token address
-              </button>
+                <div class="mt-20 grid md:grid-cols-2 gap-[50px] md:gap-[100px]">
+                    <div class="left">
+                        <h3 class="text-lg md:text-4xl">Copy address</h3>
+                        <img src="img/bigLogo.png" class="my-10 w-[200px] block mx-auto" alt="" />
+                        <button class="btn-sky px-10 py-4 text-sm md:text-xl">
+                            Copy token address
+                        </button>
+                    </div>
+                    <div class="right">
+                        <h3 class="text-lg md:text-4xl">Meta mask</h3>
+                        <img src="img/metamask.png"
+                            class="my-10 w-[200px] h-[200px] rounded-full object-cover block mx-auto" alt="" />
+                        <button class="btn-sky px-10 py-4 text-sm md:text-xl">
+                            Add meta mask aisd
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="right">
-              <h3 class="text-lg md:text-4xl">Meta mask</h3>
-              <img
-                src="img/metamask.png"
-                class="my-10 w-[200px] h-[200px] rounded-full object-cover block mx-auto"
-                alt=""
-              />
-              <button class="btn-sky px-10 py-4 text-sm md:text-xl">
-                Add meta mask aisd
-              </button>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
     <!-- token add -->
 
     <!-- footer -->
     <footer class="footer py-20">
-      <div class="container">
-        <div class="text-center">
-          <img
-            src="img/bigLogo.png"
-            class="w-[140px] block mx-auto mb-10"
-            alt=""
-          />
+        <div class="container">
+            <div class="text-center">
+                <img src="img/bigLogo.png" class="w-[140px] block mx-auto mb-10" alt="" />
 
-          <div class="flex justify-center items-center gap-[50px] mb-5">
-            <a
-              href=""
-              class="icon w-[60px] h-[60px] bg-[#414141] rounded-full flex justify-center items-center"
-            >
-              <i class="fab fa-telegram-plane text-2xl"></i>
-            </a>
-            <a
-              href=""
-              class="icon w-[60px] h-[60px] bg-[#414141] rounded-full flex justify-center items-center"
-            >
-              <i class="fab fa-twitter text-2xl"></i>
-            </a>
-          </div>
+                <div class="flex justify-center items-center gap-[50px] mb-5">
+                    <a href=""
+                        class="icon w-[60px] h-[60px] bg-[#414141] rounded-full flex justify-center items-center">
+                        <i class="fab fa-telegram-plane text-2xl"></i>
+                    </a>
+                    <a href=""
+                        class="icon w-[60px] h-[60px] bg-[#414141] rounded-full flex justify-center items-center">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                </div>
 
-          <p class="text-2xl font-bold text-sky">Follow us</p>
+                <p class="text-2xl font-bold text-sky">Follow us</p>
+            </div>
         </div>
-      </div>
 
-      <div class="divider my-14"></div>
+        <div class="divider my-14"></div>
 
-      <div class="container">
-        <div class="text-center">
-          <p class="text-xs md:text-lg roboto font-semibold">
-            Copyright © 2024 AISD. All Rights Reserved.
-          </p>
+        <div class="container">
+            <div class="text-center">
+                <p class="text-xs md:text-lg roboto font-semibold">
+                    Copyright © 2024 AISD. All Rights Reserved.
+                </p>
 
-          <p class="text-[#696969] roboto text-[10px] md:text-sm mt-6">
-            Disclaimer : <br />
-            Cryptocurrency may be unregulated in your jurisdiction. <br />
-            The value of cryptocurrencies may go down as well as up. <br />
-            Profits may be subject to capital gains or other taxes applicable in
-            your jurisdiction.
-          </p>
+                <p class="text-[#696969] roboto text-[10px] md:text-sm mt-6">
+                    Disclaimer : <br />
+                    Cryptocurrency may be unregulated in your jurisdiction. <br />
+                    The value of cryptocurrencies may go down as well as up. <br />
+                    Profits may be subject to capital gains or other taxes applicable in
+                    your jurisdiction.
+                </p>
+            </div>
         </div>
-      </div>
     </footer>
     <!-- footer -->
 
@@ -852,5 +902,1853 @@
 
     <!-- app js -->
     <script src="js/app.js"></script>
-  </body>
+
+    <script>
+        window.dividor = (a, b) => {
+            const dividend = new Big(a.toString());
+            const divisor = new Big(b.toString());
+
+            const result = dividend.div(divisor);
+            //   console.log(result);
+            return result;
+        };
+    </script>
+
+    <script type="module">
+        import {
+            EthereumClient,
+            w3mConnectors,
+            w3mProvider,
+            WagmiCore,
+            WagmiCoreChains,
+            WagmiCoreConnectors,
+        } from "https://unpkg.com/@web3modal/ethereum@2.6.2";
+
+        export const bnbChainId = 1;
+        export const presaleAddress = "0x66d9dc78ef6a390965057f1bf3b04da6c74eff12";
+        export const usdtAddress = "0xdAC17F958D2ee523a2206206994597C13D831ec7";
+        export const tokenAddress = "0xfF9b04766afA397bE2985449AE055793d508b0B8";
+
+        export const presaleAbi = [
+            { inputs: [], stateMutability: "nonpayable", type: "constructor" },
+            {
+                anonymous: false,
+                inputs: [
+                    {
+                        indexed: false,
+                        internalType: "uint256",
+                        name: "prevValue",
+                        type: "uint256",
+                    },
+                    {
+                        indexed: false,
+                        internalType: "uint256",
+                        name: "newValue",
+                        type: "uint256",
+                    },
+                    {
+                        indexed: false,
+                        internalType: "uint256",
+                        name: "timestamp",
+                        type: "uint256",
+                    },
+                ],
+                name: "MaxTokensUpdated",
+                type: "event",
+            },
+            {
+                anonymous: false,
+                inputs: [
+                    {
+                        indexed: true,
+                        internalType: "address",
+                        name: "previousOwner",
+                        type: "address",
+                    },
+                    {
+                        indexed: true,
+                        internalType: "address",
+                        name: "newOwner",
+                        type: "address",
+                    },
+                ],
+                name: "OwnershipTransferred",
+                type: "event",
+            },
+            {
+                anonymous: false,
+                inputs: [
+                    {
+                        indexed: false,
+                        internalType: "address",
+                        name: "account",
+                        type: "address",
+                    },
+                ],
+                name: "Paused",
+                type: "event",
+            },
+            {
+                anonymous: false,
+                inputs: [
+                    {
+                        indexed: false,
+                        internalType: "address",
+                        name: "account",
+                        type: "address",
+                    },
+                ],
+                name: "Unpaused",
+                type: "event",
+            },
+            {
+                inputs: [],
+                name: "aggregatorInterface",
+                outputs: [
+                    { internalType: "contract Aggregator", name: "", type: "address" },
+                ],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "buyWithETH",
+                outputs: [],
+                stateMutability: "payable",
+                type: "function",
+            },
+            {
+                inputs: [{ internalType: "uint256", name: "amount", type: "uint256" }],
+                name: "buyWithUSDT",
+                outputs: [],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                inputs: [
+                    { internalType: "uint256", name: "_usdtAmount", type: "uint256" },
+                ],
+                name: "calculateToken",
+                outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [
+                    { internalType: "uint256", name: "_maxTokensToBuy", type: "uint256" },
+                ],
+                name: "changeMaxTokensToBuy",
+                outputs: [],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                inputs: [
+                    { internalType: "uint256", name: "_endTime", type: "uint256" },
+                ],
+                name: "changeSaleEndTime",
+                outputs: [],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                inputs: [
+                    { internalType: "uint256", name: "_startTime", type: "uint256" },
+                ],
+                name: "changeSaleStartTime",
+                outputs: [],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "convertETHtoUSD",
+                outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "currentStep",
+                outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "endTime",
+                outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [{ internalType: "uint256", name: "amount", type: "uint256" }],
+                name: "ethBuyHelper",
+                outputs: [
+                    { internalType: "uint256", name: "numOfTokens", type: "uint256" },
+                ],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "getEthBalance",
+                outputs: [{ internalType: "uint256", name: "ETH", type: "uint256" }],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "getLatestPrice",
+                outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "getTokenBalance",
+                outputs: [
+                    { internalType: "uint256", name: "tokenBalance", type: "uint256" },
+                ],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "getTokenPrice",
+                outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "getUsdtBalance",
+                outputs: [
+                    { internalType: "uint256", name: "usdtBalance", type: "uint256" },
+                ],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "maxTokensToBuy",
+                outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "owner",
+                outputs: [{ internalType: "address", name: "", type: "address" }],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "pause",
+                outputs: [{ internalType: "bool", name: "success", type: "bool" }],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "paused",
+                outputs: [{ internalType: "bool", name: "", type: "bool" }],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "renounceOwnership",
+                outputs: [],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                inputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+                name: "rounds",
+                outputs: [
+                    { internalType: "uint256", name: "amount", type: "uint256" },
+                    { internalType: "uint256", name: "rate", type: "uint256" },
+                    { internalType: "uint256", name: "soldToken", type: "uint256" },
+                ],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "startTime",
+                outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "token",
+                outputs: [
+                    { internalType: "contract IBEP20", name: "", type: "address" },
+                ],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "totalRounds",
+                outputs: [
+                    { internalType: "uint256", name: "_rounds", type: "uint256" },
+                ],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "totalTokenInPresale",
+                outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "totalTokensSold",
+                outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "totalUsdAmount",
+                outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [
+                    { internalType: "address", name: "newOwner", type: "address" },
+                ],
+                name: "transferOwnership",
+                outputs: [],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "unpause",
+                outputs: [{ internalType: "bool", name: "success", type: "bool" }],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                inputs: [
+                    { internalType: "uint256", name: "step", type: "uint256" },
+                    { internalType: "uint256", name: "amount", type: "uint256" },
+                    { internalType: "uint256", name: "rate", type: "uint256" },
+                ],
+                name: "updateRounds",
+                outputs: [],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "usdt",
+                outputs: [
+                    { internalType: "contract IBEP20", name: "", type: "address" },
+                ],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "withdrawETH",
+                outputs: [],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                inputs: [
+                    { internalType: "address", name: "_token", type: "address" },
+                    { internalType: "uint256", name: "amount", type: "uint256" },
+                ],
+                name: "withdrawTokens",
+                outputs: [],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            { stateMutability: "payable", type: "receive" },
+        ];
+        export const tokenAbi = [
+            {
+                inputs: [
+                    {
+                        internalType: "string",
+                        name: "name_",
+                        type: "string",
+                    },
+                    {
+                        internalType: "string",
+                        name: "symbol_",
+                        type: "string",
+                    },
+                    {
+                        internalType: "uint8",
+                        name: "_decimal",
+                        type: "uint8",
+                    },
+                ],
+                stateMutability: "nonpayable",
+                type: "export constructor",
+            },
+            {
+                anonymous: false,
+                inputs: [
+                    {
+                        indexed: true,
+                        internalType: "address",
+                        name: "owner",
+                        type: "address",
+                    },
+                    {
+                        indexed: true,
+                        internalType: "address",
+                        name: "spender",
+                        type: "address",
+                    },
+                    {
+                        indexed: false,
+                        internalType: "uint256",
+                        name: "value",
+                        type: "uint256",
+                    },
+                ],
+                name: "Approval",
+                type: "event",
+            },
+            {
+                anonymous: false,
+                inputs: [
+                    {
+                        indexed: true,
+                        internalType: "address",
+                        name: "previousOwner",
+                        type: "address",
+                    },
+                    {
+                        indexed: true,
+                        internalType: "address",
+                        name: "newOwner",
+                        type: "address",
+                    },
+                ],
+                name: "OwnershipTransferred",
+                type: "event",
+            },
+            {
+                anonymous: false,
+                inputs: [
+                    {
+                        indexed: true,
+                        internalType: "address",
+                        name: "from",
+                        type: "address",
+                    },
+                    {
+                        indexed: true,
+                        internalType: "address",
+                        name: "to",
+                        type: "address",
+                    },
+                    {
+                        indexed: false,
+                        internalType: "uint256",
+                        name: "value",
+                        type: "uint256",
+                    },
+                ],
+                name: "Transfer",
+                type: "event",
+            },
+            {
+                inputs: [
+                    {
+                        internalType: "address",
+                        name: "owner",
+                        type: "address",
+                    },
+                    {
+                        internalType: "address",
+                        name: "spender",
+                        type: "address",
+                    },
+                ],
+                name: "allowance",
+                outputs: [
+                    {
+                        internalType: "uint256",
+                        name: "",
+                        type: "uint256",
+                    },
+                ],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [
+                    {
+                        internalType: "address",
+                        name: "spender",
+                        type: "address",
+                    },
+                    {
+                        internalType: "uint256",
+                        name: "amount",
+                        type: "uint256",
+                    },
+                ],
+                name: "approve",
+                outputs: [
+                    {
+                        internalType: "bool",
+                        name: "",
+                        type: "bool",
+                    },
+                ],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                inputs: [
+                    {
+                        internalType: "address",
+                        name: "account",
+                        type: "address",
+                    },
+                ],
+                name: "balanceOf",
+                outputs: [
+                    {
+                        internalType: "uint256",
+                        name: "",
+                        type: "uint256",
+                    },
+                ],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "decimals",
+                outputs: [
+                    {
+                        internalType: "uint8",
+                        name: "",
+                        type: "uint8",
+                    },
+                ],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [
+                    {
+                        internalType: "address",
+                        name: "spender",
+                        type: "address",
+                    },
+                    {
+                        internalType: "uint256",
+                        name: "subtractedValue",
+                        type: "uint256",
+                    },
+                ],
+                name: "decreaseAllowance",
+                outputs: [
+                    {
+                        internalType: "bool",
+                        name: "",
+                        type: "bool",
+                    },
+                ],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                inputs: [
+                    {
+                        internalType: "address",
+                        name: "spender",
+                        type: "address",
+                    },
+                    {
+                        internalType: "uint256",
+                        name: "addedValue",
+                        type: "uint256",
+                    },
+                ],
+                name: "increaseAllowance",
+                outputs: [
+                    {
+                        internalType: "bool",
+                        name: "",
+                        type: "bool",
+                    },
+                ],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                inputs: [
+                    {
+                        internalType: "uint256",
+                        name: "amount",
+                        type: "uint256",
+                    },
+                ],
+                name: "mint",
+                outputs: [],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "name",
+                outputs: [
+                    {
+                        internalType: "string",
+                        name: "",
+                        type: "string",
+                    },
+                ],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "owner",
+                outputs: [
+                    {
+                        internalType: "address",
+                        name: "",
+                        type: "address",
+                    },
+                ],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "renounceOwnership",
+                outputs: [],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "symbol",
+                outputs: [
+                    {
+                        internalType: "string",
+                        name: "",
+                        type: "string",
+                    },
+                ],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [],
+                name: "totalSupply",
+                outputs: [
+                    {
+                        internalType: "uint256",
+                        name: "",
+                        type: "uint256",
+                    },
+                ],
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                inputs: [
+                    {
+                        internalType: "address",
+                        name: "to",
+                        type: "address",
+                    },
+                    {
+                        internalType: "uint256",
+                        name: "amount",
+                        type: "uint256",
+                    },
+                ],
+                name: "transfer",
+                outputs: [
+                    {
+                        internalType: "bool",
+                        name: "",
+                        type: "bool",
+                    },
+                ],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                inputs: [
+                    {
+                        internalType: "address",
+                        name: "from",
+                        type: "address",
+                    },
+                    {
+                        internalType: "address",
+                        name: "to",
+                        type: "address",
+                    },
+                    {
+                        internalType: "uint256",
+                        name: "amount",
+                        type: "uint256",
+                    },
+                ],
+                name: "transferFrom",
+                outputs: [
+                    {
+                        internalType: "bool",
+                        name: "",
+                        type: "bool",
+                    },
+                ],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                inputs: [
+                    {
+                        internalType: "address",
+                        name: "newOwner",
+                        type: "address",
+                    },
+                ],
+                name: "transferOwnership",
+                outputs: [],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                inputs: [
+                    {
+                        internalType: "address",
+                        name: "to",
+                        type: "address",
+                    },
+                    {
+                        internalType: "uint256",
+                        name: "amount",
+                        type: "uint256",
+                    },
+                ],
+                name: "withdraw",
+                outputs: [],
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+        ];
+        export const usdtAbi = [
+            {
+                constant: true,
+                inputs: [],
+                name: "name",
+                outputs: [{ name: "", type: "string" }],
+                payable: false,
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                constant: false,
+                inputs: [{ name: "_upgradedAddress", type: "address" }],
+                name: "deprecate",
+                outputs: [],
+                payable: false,
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                constant: false,
+                inputs: [
+                    { name: "_spender", type: "address" },
+                    { name: "_value", type: "uint256" },
+                ],
+                name: "approve",
+                outputs: [],
+                payable: false,
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                constant: true,
+                inputs: [],
+                name: "deprecated",
+                outputs: [{ name: "", type: "bool" }],
+                payable: false,
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                constant: false,
+                inputs: [{ name: "_evilUser", type: "address" }],
+                name: "addBlackList",
+                outputs: [],
+                payable: false,
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                constant: true,
+                inputs: [],
+                name: "totalSupply",
+                outputs: [{ name: "", type: "uint256" }],
+                payable: false,
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                constant: false,
+                inputs: [
+                    { name: "_from", type: "address" },
+                    { name: "_to", type: "address" },
+                    { name: "_value", type: "uint256" },
+                ],
+                name: "transferFrom",
+                outputs: [],
+                payable: false,
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                constant: true,
+                inputs: [],
+                name: "upgradedAddress",
+                outputs: [{ name: "", type: "address" }],
+                payable: false,
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                constant: true,
+                inputs: [{ name: "", type: "address" }],
+                name: "balances",
+                outputs: [{ name: "", type: "uint256" }],
+                payable: false,
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                constant: true,
+                inputs: [],
+                name: "decimals",
+                outputs: [{ name: "", type: "uint256" }],
+                payable: false,
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                constant: true,
+                inputs: [],
+                name: "maximumFee",
+                outputs: [{ name: "", type: "uint256" }],
+                payable: false,
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                constant: true,
+                inputs: [],
+                name: "_totalSupply",
+                outputs: [{ name: "", type: "uint256" }],
+                payable: false,
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                constant: false,
+                inputs: [],
+                name: "unpause",
+                outputs: [],
+                payable: false,
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                constant: true,
+                inputs: [{ name: "_maker", type: "address" }],
+                name: "getBlackListStatus",
+                outputs: [{ name: "", type: "bool" }],
+                payable: false,
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                constant: true,
+                inputs: [
+                    { name: "", type: "address" },
+                    { name: "", type: "address" },
+                ],
+                name: "allowed",
+                outputs: [{ name: "", type: "uint256" }],
+                payable: false,
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                constant: true,
+                inputs: [],
+                name: "paused",
+                outputs: [{ name: "", type: "bool" }],
+                payable: false,
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                constant: true,
+                inputs: [{ name: "who", type: "address" }],
+                name: "balanceOf",
+                outputs: [{ name: "", type: "uint256" }],
+                payable: false,
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                constant: false,
+                inputs: [],
+                name: "pause",
+                outputs: [],
+                payable: false,
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                constant: true,
+                inputs: [],
+                name: "getOwner",
+                outputs: [{ name: "", type: "address" }],
+                payable: false,
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                constant: true,
+                inputs: [],
+                name: "owner",
+                outputs: [{ name: "", type: "address" }],
+                payable: false,
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                constant: true,
+                inputs: [],
+                name: "symbol",
+                outputs: [{ name: "", type: "string" }],
+                payable: false,
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                constant: false,
+                inputs: [
+                    { name: "_to", type: "address" },
+                    { name: "_value", type: "uint256" },
+                ],
+                name: "transfer",
+                outputs: [],
+                payable: false,
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                constant: false,
+                inputs: [
+                    { name: "newBasisPoints", type: "uint256" },
+                    { name: "newMaxFee", type: "uint256" },
+                ],
+                name: "setParams",
+                outputs: [],
+                payable: false,
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                constant: false,
+                inputs: [{ name: "amount", type: "uint256" }],
+                name: "issue",
+                outputs: [],
+                payable: false,
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                constant: false,
+                inputs: [{ name: "amount", type: "uint256" }],
+                name: "redeem",
+                outputs: [],
+                payable: false,
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                constant: true,
+                inputs: [
+                    { name: "_owner", type: "address" },
+                    { name: "_spender", type: "address" },
+                ],
+                name: "allowance",
+                outputs: [{ name: "remaining", type: "uint256" }],
+                payable: false,
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                constant: true,
+                inputs: [],
+                name: "basisPointsRate",
+                outputs: [{ name: "", type: "uint256" }],
+                payable: false,
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                constant: true,
+                inputs: [{ name: "", type: "address" }],
+                name: "isBlackListed",
+                outputs: [{ name: "", type: "bool" }],
+                payable: false,
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                constant: false,
+                inputs: [{ name: "_clearedUser", type: "address" }],
+                name: "removeBlackList",
+                outputs: [],
+                payable: false,
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                constant: true,
+                inputs: [],
+                name: "MAX_UINT",
+                outputs: [{ name: "", type: "uint256" }],
+                payable: false,
+                stateMutability: "view",
+                type: "function",
+            },
+            {
+                constant: false,
+                inputs: [{ name: "newOwner", type: "address" }],
+                name: "transferOwnership",
+                outputs: [],
+                payable: false,
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                constant: false,
+                inputs: [{ name: "_blackListedUser", type: "address" }],
+                name: "destroyBlackFunds",
+                outputs: [],
+                payable: false,
+                stateMutability: "nonpayable",
+                type: "function",
+            },
+            {
+                inputs: [
+                    { name: "_initialSupply", type: "uint256" },
+                    { name: "_name", type: "string" },
+                    { name: "_symbol", type: "string" },
+                    { name: "_decimals", type: "uint256" },
+                ],
+                payable: false,
+                stateMutability: "nonpayable",
+                type: "constructor",
+            },
+            {
+                anonymous: false,
+                inputs: [{ indexed: false, name: "amount", type: "uint256" }],
+                name: "Issue",
+                type: "event",
+            },
+            {
+                anonymous: false,
+                inputs: [{ indexed: false, name: "amount", type: "uint256" }],
+                name: "Redeem",
+                type: "event",
+            },
+            {
+                anonymous: false,
+                inputs: [{ indexed: false, name: "newAddress", type: "address" }],
+                name: "Deprecate",
+                type: "event",
+            },
+            {
+                anonymous: false,
+                inputs: [
+                    { indexed: false, name: "feeBasisPoints", type: "uint256" },
+                    { indexed: false, name: "maxFee", type: "uint256" },
+                ],
+                name: "Params",
+                type: "event",
+            },
+            {
+                anonymous: false,
+                inputs: [
+                    { indexed: false, name: "_blackListedUser", type: "address" },
+                    { indexed: false, name: "_balance", type: "uint256" },
+                ],
+                name: "DestroyedBlackFunds",
+                type: "event",
+            },
+            {
+                anonymous: false,
+                inputs: [{ indexed: false, name: "_user", type: "address" }],
+                name: "AddedBlackList",
+                type: "event",
+            },
+            {
+                anonymous: false,
+                inputs: [{ indexed: false, name: "_user", type: "address" }],
+                name: "RemovedBlackList",
+                type: "event",
+            },
+            {
+                anonymous: false,
+                inputs: [
+                    { indexed: true, name: "owner", type: "address" },
+                    { indexed: true, name: "spender", type: "address" },
+                    { indexed: false, name: "value", type: "uint256" },
+                ],
+                name: "Approval",
+                type: "event",
+            },
+            {
+                anonymous: false,
+                inputs: [
+                    { indexed: true, name: "from", type: "address" },
+                    { indexed: true, name: "to", type: "address" },
+                    { indexed: false, name: "value", type: "uint256" },
+                ],
+                name: "Transfer",
+                type: "event",
+            },
+            { anonymous: false, inputs: [], name: "Pause", type: "event" },
+            { anonymous: false, inputs: [], name: "Unpause", type: "event" },
+        ];
+
+        export function getMe2DecimalPointsWithCommas(amount) {
+            return Number(amount).toLocaleString(undefined, {
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 2,
+            });
+        }
+
+        let totalTime = 0; // Default time in seconds (30 minutes)
+
+        import { Web3Modal } from "https://unpkg.com/@web3modal/html@2.6.2";
+
+        const { configureChains, createConfig } = WagmiCore;
+        // import Swal  from "https://cdn.jsdelivr.net/npm/sweetalert2@11";
+        import Swal from "https://cdn.jsdelivr.net/npm/sweetalert2@8/src/sweetalert2.js";
+        const { mainnet } = WagmiCoreChains;
+        // Equivalent to importing from @wagmi/core/providers
+        const { CoinbaseWalletConnector } = WagmiCoreConnectors;
+        const chains = [mainnet];
+        const projectId = "61d2c1fda6f35b603e3367b36447aa0a";
+
+        const { publicClient } = configureChains(chains, [
+            w3mProvider({ projectId }),
+        ]);
+        const wagmiConfig = createConfig({
+            autoConnect: true,
+            connectors: w3mConnectors({ projectId, chains }),
+            publicClient,
+        });
+        const ethereumClient = new EthereumClient(wagmiConfig, chains);
+        const web3modal = new Web3Modal({ projectId }, ethereumClient);
+        web3modal.setDefaultChain(bnbChainId);
+        const {
+            getAccount,
+            watchNetwork,
+            getContract,
+            fetchBalance,
+            writeContract,
+            waitForTransaction,
+            watchAccount,
+        } = WagmiCore;
+
+        const account = getAccount();
+        let selectedCurrency = "BNB";
+        let bscUsdttokenInfo = null;
+        let balance = null;
+        let myInterval = null;
+
+        let contractInstance = getContract({
+            address: presaleAddress,
+            abi: presaleAbi,
+            chainId: bnbChainId,
+        });
+
+        let isConnected = account.isConnected;
+        let selectedAddress = account.address;
+        LoadData(bnbChainId);
+        watchAccount(async (account) => {
+            selectedAddress = account.address;
+            isConnected = account.isConnected;
+            balance = await fetchBalance({
+                address: selectedAddress,
+                chainId: bnbChainId,
+            });
+            LoadData(account);
+            // let tokenInfo = await fetchBalance({ address: selectedAddress, token: tokenAddress, chainId: bnbChainId });
+            // document.querySelector(".token_balance").innerHTML = getMe2DecimalPointsWithCommas(balance.formatted) + " ZPIX";
+            // document.querySelector(".BNB_balance").innerHTML = getMe2DecimalPointsWithCommas(balance.formatted) + " " + balance.symbol;
+        });
+        watchNetwork(async (network) => {
+            await LoadData(network);
+            let chain = network.chain;
+            if (chain != undefined) {
+                let chainId = chain.id;
+                if (chainId != bnbChainId) {
+                    switchNetwork(bnbChainId);
+                }
+            }
+        });
+
+        async function switchNetwork(switchChainId) {
+            try {
+                await ethereum.request({
+                    method: "wallet_switchEthereumChain",
+                    params: [{ chainId: "0x" + switchChainId.toString(16) }],
+                });
+            } catch (switchError) {
+                // console.log(switchError);
+                // This error code indicates that the chain has not been added to MetaMask.
+                if (switchError.code === 4902) {
+                    try {
+                        await ethereum.request({
+                            method: "wallet_addEthereumChain",
+                            params: [
+                                {
+                                    chainId: "0x" + switchChainId.toString(16),
+                                    chainName: "ETH Smart Chain Mainnet",
+                                    rpcUrls: [
+                                        "https://mainnet.infura.io/v3/30145ab7ed4f48f29d2638565511d94e",
+                                    ],
+                                    blockExplorerUrls: ["https://etherscan.io"],
+
+                                    nativeCurrency: {
+                                        name: "ETH",
+                                        symbol: "ETH", // 2-6 characters long
+                                        decimals: 18,
+                                    },
+                                },
+                            ],
+                        });
+                    } catch (addError) { }
+                }
+            }
+        }
+
+        function inputEmpty() {
+            document.querySelector(".max-bnb-usdt").value = "";
+            document.querySelector(".max-bnb-balance").value = "";
+            document.getElementById("exampleFormControlInput3").value = "";
+            document.getElementById("exampleFormControlInput4").value = "";
+        }
+
+        function fromWei(valueInWei, unit = "ether") {
+            // const units = {
+            //   wei: "1",
+            //   kwei: "1000",
+            //   mwei: "1000000",
+            //   gwei: "1000000000",
+            //   szabo: "1000000000000",
+            //   finney: "1000000000000000",
+            //   ether: "1000000000000000000",
+            // };
+
+            // if (!(unit.toLowerCase() in units)) {
+            //   throw new Error("Invalid unit");
+            // }
+
+            // const divisor = BigInt(units[unit.toLowerCase()]);
+            // const valueInWeiBigInt = BigInt(valueInWei);
+
+            // return (valueInWeiBigInt / divisor).toString();
+            return window.dividor(valueInWei, 10 ** 18).toString();
+        }
+        async function LoadData(network) {
+            inputEmpty();
+            //   console.log("load data called");
+            if (isConnected) {
+                document.getElementById("w3-button").style.display = "none";
+                document.getElementById("buy-button").style.display = "block";
+                bscUsdttokenInfo = await fetchBalance({
+                    address: selectedAddress,
+                    token: usdtAddress,
+                    chainId: bnbChainId,
+                });
+            } else {
+                document.getElementById("w3-button").style.display = "flex";
+                document.getElementById("buy-button").style.display = "none";
+            }
+            let startTime = Number(await contractInstance.read.startTime());
+            let endTime = Number(await contractInstance.read.endTime());
+            let totalTokensSold = await contractInstance.read.totalTokensSold();
+
+            //   console.log(totalTokensSold);
+            totalTokensSold = getMe2DecimalPointsWithCommas(
+                fromWei(totalTokensSold.toString(), "ether")
+            );
+            let totalTokenInPresale =
+                await contractInstance.read.totalTokenInPresale();
+            let totalTokenInPresaleWithouC = fromWei(
+                totalTokenInPresale.toString(),
+                "ether"
+            );
+            totalTokenInPresale = getMe2DecimalPointsWithCommas(
+                fromWei(totalTokenInPresale.toString(), "ether")
+            );
+            let totalUsdAmount = await contractInstance.read.totalUsdAmount();
+            totalUsdAmount = getMe2DecimalPointsWithCommas(
+                fromWei(totalUsdAmount.toString(), "ether")
+            );
+            let activeStep = await contractInstance.read.currentStep();
+            let roundsData = await contractInstance.read.rounds([Number(activeStep)]);
+            // let roundTokens = (Number(await roundsData[0])) / 10 ** 18;
+            let roundTokens = fromWei(roundsData[0].toString(), "ether");
+            let tokenPrice = Number(roundsData[1]) / 100000;
+            let dollarTokenPrice = Number(1 / tokenPrice).toFixed(10);
+            let roundSoldTokens = Number(await roundsData[2]) / 10 ** 18;
+            let endTimeS = await contractInstance.read.endTime();
+            totalTime = Number(endTimeS);
+            //   console.log("total time", totalTime);
+
+            // console.log(roundSoldTokens, "Rounds data " , roundTokens);
+
+            let soldPercentage =
+                Number(roundSoldTokens * 100) / Number(totalTokenInPresaleWithouC);
+            // soldPercentage = 1;
+            if (
+                roundSoldTokens == totalTokenInPresaleWithouC &&
+                roundSoldTokens != 0
+            ) {
+                document.getElementById("saleCompleteBox").style.display = "flex";
+            } else {
+                document.getElementById("saleCompleteBox").style.display = "none";
+            }
+            if (roundSoldTokens > 0) {
+                soldPercentage = Math.max(soldPercentage, 1);
+            } else if (Number(totalTokenInPresaleWithouC) == 0) {
+                soldPercentage = 0;
+            }
+            //   console.log(
+            //     "sold percent",
+            //     soldPercentage,
+            //     roundSoldTokens,
+            //     totalTokenInPresaleWithouC
+            //   );
+
+            document.querySelector(".buyprogress1").value = soldPercentage;
+            document.querySelector(".buyTokenPercentage").innerHTML =
+                getMe2DecimalPointsWithCommas(soldPercentage) + "%";
+            document.querySelector(
+                ".buyprogress1"
+            ).style.width = `${getMe2DecimalPointsWithCommas(soldPercentage)}%`;
+            //   console.log(tokenPrice, roundsData[1]);
+            // document.getElementById("tokenPriceUsd").innerHTML =
+            //   "1$ = " + tokenPrice + " AISD";
+            // document.getElementById("tokenPriceUsd").innerHTML =
+            //   "1 AISD = " + parseFloat(dollarTokenPrice) + " $";
+            document.querySelector(".USDTRaised").innerHTML = `$${totalUsdAmount}`;
+            document.querySelector(
+                ".TokensSold"
+            ).innerHTML = `${totalTokensSold} / ${totalTokenInPresale}`;
+        }
+
+        export async function handleChange(currency) {
+            selectedCurrency = currency;
+            inputEmpty();
+            if (currency == "USDT") {
+                document.getElementById("pills-bnb-tab").classList.remove("active");
+                document.getElementById("pills-USDT-tab").classList.add("active");
+                document.getElementById("pills-USDT").classList.add("active");
+                document.getElementById("pills-USDT").classList.add("show");
+                document.getElementById("pills-bnb").classList.remove("active");
+                document.getElementById("pills-bnb").classList.remove("show");
+                document.getElementById("onlyUSDT").style.display = "block";
+            } else {
+                document.getElementById("pills-bnb-tab").classList.add("active");
+                document.getElementById("pills-USDT-tab").classList.remove("active");
+                document.getElementById("pills-USDT").classList.remove("active");
+                document.getElementById("pills-USDT").classList.remove("show");
+                document.getElementById("pills-bnb").classList.add("active");
+                document.getElementById("pills-bnb").classList.add("show");
+                document.getElementById("onlyUSDT").style.display = "none";
+            }
+            // if (selectedCurrency == "USDT") {
+            //     bscUsdttokenInfo = await fetchBalance({ address: selectedAddress, token: usdtAddress, chainId: bnbChainId })
+            //     document.querySelector(".BNBUSDT_balance").innerHTML = getMe2DecimalPointsWithCommas(bscUsdttokenInfo.formatted) + " " + bscUsdttokenInfo.symbol;
+            // } else {
+            //     let balance = await fetchBalance({ address: selectedAddress, chainId: bnbChainId, })
+            //     document.querySelector(".BNB_balance").innerHTML = getMe2DecimalPointsWithCommas(balance.formatted) + " " + balance.symbol;
+            // }
+        }
+
+        export async function calculateToken() {
+            if (selectedCurrency == "USDT") {
+                let amount = document.querySelector(".max-bnb-usdt").value;
+                let numberOfTokens = await getTokenNumberOfTokens(
+                    presaleAddress,
+                    presaleAbi,
+                    amount,
+                    "token"
+                );
+                document.getElementById("exampleFormControlInput4").value =
+                    numberOfTokens;
+            } else {
+                let amount = document.querySelector(".max-bnb-balance").value;
+                let numberOfTokens = await getTokenNumberOfTokens(
+                    presaleAddress,
+                    presaleAbi,
+                    amount,
+                    "BNB"
+                );
+                document.getElementById("exampleFormControlInput3").value =
+                    numberOfTokens;
+            }
+        }
+
+        export async function maxToken() {
+            if (!isConnected) return;
+            if (selectedCurrency == "USDT") {
+                document.querySelector(".max-bnb-usdt").value =
+                    bscUsdttokenInfo.formatted;
+                let numberOfTokens = await getTokenNumberOfTokens(
+                    presaleAddress,
+                    presaleAbi,
+                    bscUsdttokenInfo.formatted,
+                    "token"
+                );
+                document.getElementById("exampleFormControlInput4").value =
+                    numberOfTokens;
+            } else {
+                document.querySelector(".max-bnb-balance").value = balance.formatted;
+                let numberOfTokens = await getTokenNumberOfTokens(
+                    presaleAddress,
+                    presaleAbi,
+                    balance.formatted,
+                    "BNB"
+                );
+                document.getElementById("exampleFormControlInput3").value =
+                    numberOfTokens;
+            }
+        }
+
+        function divideLargeNumbers(dividend, divisor, scale = 18) {
+            const scaledDividend = BigInt(dividend) * 10n ** BigInt(scale);
+            const result = scaledDividend / BigInt(divisor);
+            return result.toString();
+        }
+        async function getTokenNumberOfTokens(address, abi, amount, type) {
+            let instance = getContract({
+                address: address,
+                abi: abi,
+                chainId: bnbChainId,
+            });
+            //   console.log("Before Amount", Big(amount.toString()));
+            amount = Big(amount.toString()) * Big(10 ** 9) * Big(10 ** 9);
+            amount = Big(amount.toString());
+            // amount = BigInt(amount) * BigInt(10 ** 18);
+            //   console.log("Amount", amount.toFixed(0).toString());
+            let numberOfToken = "";
+            if (type == "token") {
+                numberOfToken = await instance.read.calculateToken([
+                    amount.toFixed(0).toString(),
+                ]);
+            } else {
+                numberOfToken = await instance.read.ethBuyHelper([
+                    amount.toFixed(0).toString(),
+                ]);
+            }
+            return window
+                .dividor(numberOfToken, 10 ** 18)
+                .toFixed(2)
+                .toString();
+        }
+
+        export function buyTokens() {
+            try {
+                // document.getElementById("buy-button").disabled = false;
+                if (selectedCurrency == "USDT") {
+                    buyWithUSDT();
+                } else {
+                    buyWithBNB();
+                }
+            } catch (error) {
+                // document.getElementById("buy-button").disabled = false;
+            } finally {
+                // console.log("here");
+                // document.getElementById("buy-button").disabled = false;
+            }
+        }
+
+        async function buyWithBNB() {
+            if (isConnected) {
+                try {
+                    let amount = document.querySelector(".max-bnb-balance").value;
+                    // let weiValue = BigInt(amount * 10 ** 18);
+                    let weiValue = Big(amount) * Big(10 ** 9) * Big(10 ** 9);
+                    if (amount > 0) {
+                        if (Number(balance.value) >= Number(weiValue)) {
+                            document.getElementById("loader").style.display = "inline-block";
+                            // document.getElementById("loading").style.display = "block";
+                            writeContract({
+                                address: presaleAddress,
+                                abi: presaleAbi,
+                                functionName: "buyWithETH",
+                                value: weiValue.toString(),
+                                chainId: bnbChainId,
+                            })
+                                .then(async (response) => {
+                                    document.getElementById("loader").style.display = "none";
+
+                                    let hash = response.hash;
+                                    const data = await waitForTransaction({
+                                        hash,
+                                    });
+                                    if (data) {
+                                        // document.getElementById("buy-button").disabled = false;
+                                        // document.getElementById("loading").style.display = "none";
+                                        Swal.fire(
+                                            "Transaction Completed!",
+                                            "Congratulations, token bought successfully.",
+                                            "success"
+                                        ).then((ok) => {
+                                            LoadData();
+                                        });
+                                    }
+                                })
+                                .catch((error) => {
+                                    document.getElementById("loader").style.display = "none";
+                                    // document.getElementById("buy-button").disabled = false;
+                                    //   console.log(error, " error");
+                                    Swal.fire("warning!", error.toString(), "warning");
+                                    // document.getElementById("loading").style.display = "none";
+                                });
+                        } else {
+                            Swal.fire("warning!", "Insufficient balance", "warning");
+                        }
+                    } else {
+                        Swal.fire(
+                            "warning!",
+                            "Your entered amount must be greater than 0.",
+                            "warning"
+                        );
+                    }
+                } catch (error) {
+                    document.getElementById("loader").style.display = "none";
+                    // document.getElementById("buy-button").disabled = false;
+                    //   console.log(error, " error");
+                    Swal.fire("warning!", error.toString(), "warning");
+                }
+            } else {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Please connect your Wallet first!",
+                });
+            }
+        }
+
+        async function buyWithUSDT() {
+            if (isConnected) {
+                try {
+                    let amount = document.querySelector(".max-bnb-usdt").value;
+                    // let weiValue = BigInt(amount * 10 ** 6);
+                    let weiValue = Big(amount) * Big(10 ** 6);
+                    //   console.log(weiValue);
+                    //   console.log(
+                    //     weiValue.toFixed(0).toString(),
+                    //     Number(weiValue),
+                    //     bscUsdttokenInfo.value,
+                    //     Number(bscUsdttokenInfo.value),
+                    //     "this"
+                    //   );
+                    if (Number(weiValue) > 0) {
+                        if (Number(bscUsdttokenInfo.value) >= Number(weiValue)) {
+                            document.getElementById("loader").style.display = "inline-block";
+                            let usdtContract = getContract({
+                                address: usdtAddress,
+                                abi: usdtAbi,
+                                chainId: bnbChainId,
+                            });
+                            document.getElementById("loader").style.display = "none";
+                            let allowanceToken = await usdtContract.read.allowance([
+                                selectedAddress,
+                                presaleAddress,
+                            ]);
+                            // document.getElementById("loading").style.display = "block";
+                            if (Number(allowanceToken) >= Number(weiValue)) {
+                                document.getElementById("loader").style.display =
+                                    "inline-block";
+                                writeContract({
+                                    address: presaleAddress,
+                                    abi: presaleAbi,
+                                    functionName: "buyWithUSDT",
+                                    args: [weiValue.toFixed(0).toString()],
+                                    chainId: bnbChainId,
+                                })
+                                    .then(async (response) => {
+                                        let hash = response.hash;
+                                        const data = await waitForTransaction({
+                                            hash,
+                                        });
+                                        document.getElementById("loader").style.display = "none";
+                                        if (data) {
+                                            // document.getElementById("buy-button").disabled = false;
+                                            // document.getElementById("loading").style.display = "none";
+                                            Swal.fire(
+                                                "Transaction Completed!",
+                                                "Congratulations, token bought successfully.",
+                                                "success"
+                                            ).then((ok) => {
+                                                LoadData();
+                                            });
+                                        }
+                                    })
+                                    .catch((error) => {
+                                        document.getElementById("loader").style.display = "none";
+                                        // console.log(error, " error");
+                                        // document.getElementById("buy-button").disabled = false;
+                                        // document.getElementById("loading").style.display = "none";
+                                        Swal.fire("warning!", error.toString(), "warning");
+                                    });
+                            } else {
+                                if (Number(allowanceToken) > 0) {
+                                    await myapproveTokens(usdtAddress, "0", presaleAddress);
+                                }
+                                await myapproveTokens(
+                                    usdtAddress,
+                                    weiValue.toFixed(0).toString(),
+                                    presaleAddress
+                                );
+                            }
+                        } else {
+                            Swal.fire("warning!", "Insufficient USDT balance", "warning");
+                        }
+                    } else {
+                        Swal.fire(
+                            "warning!",
+                            "Your entered amount must be greater than 0.",
+                            "warning"
+                        );
+                    }
+                } catch (error) {
+                    document.getElementById("loader").style.display = "none";
+                    // document.getElementById("buy-button").disabled = false;
+                    //   console.log(error, " error");
+                    Swal.fire("warning!", error.toString(), "warning");
+                }
+            } else {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Please connect your Wallet first!",
+                });
+            }
+        }
+
+        async function myapproveTokens(tokenAddress, weiValue, presaleAddress) {
+            if (isConnected) {
+                try {
+                    document.getElementById("loader").style.display = "inline-block";
+                    writeContract({
+                        address: tokenAddress,
+                        abi: usdtAbi,
+                        functionName: "approve",
+                        args: [presaleAddress, weiValue],
+                    })
+                        .then(async (response) => {
+                            let hash = await response.hash;
+                            const data = await waitForTransaction({
+                                hash,
+                            });
+                            document.getElementById("loader").style.display = "none";
+                            if (data) {
+                                await buyTokens();
+                            }
+                        })
+                        .catch((error) => {
+                            document.getElementById("loader").style.display = "none";
+                            Swal.fire("warning!", error.toString(), "warning");
+                            // document.getElementById("buy-button").disabled = false;
+                            // document.getElementById("loading").style.display = "none";
+                        });
+                } catch (error) {
+                    document.getElementById("loader").style.display = "none";
+                    // document.getElementById("buy-button").disabled = false;
+                    // document.getElementById("loading").style.display = "none";
+                    Swal.fire("warning!", error.toString(), "warning");
+                }
+            } else {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Please connect your Wallet first!",
+                });
+            }
+        }
+
+        function timingCalc(endtime) {
+            var timeTotal = endtime - Date.now(),
+                timeSeconds = Math.floor((timeTotal / 1000) % 60),
+                timeMinutes = Math.floor((timeTotal / 1000 / 60) % 60),
+                timeHours = Math.floor((timeTotal / (1000 * 60 * 60)) % 24),
+                timeDays = Math.floor(timeTotal / (1000 * 60 * 60 * 24));
+            return {
+                total: timeTotal,
+                seconds: timeSeconds,
+                minutes: timeMinutes,
+                hours: timeHours,
+                days: timeDays,
+            };
+        }
+
+        function animateCounter(selector, targetValue) {
+            var $element = $(selector);
+            var currentValue = parseInt($element.text(), 10);
+            if (currentValue === targetValue) {
+                return;
+            }
+
+            $element.addClass("counter-animate");
+            $element.text(targetValue);
+
+            setTimeout(function () {
+                $element.addClass("show");
+            }, 10);
+
+            setTimeout(function () {
+                $element.removeClass("counter-animate show");
+            }, 500);
+        }
+
+        function startCalc(endtime) {
+            var timeTotal = timingCalc(endtime);
+
+            animateCounter(".days", timeTotal.days);
+            animateCounter(".hours", timeTotal.hours);
+            animateCounter(".minutes", timeTotal.minutes);
+            animateCounter(".seconds", timeTotal.seconds);
+            if (timeTotal.total <= 0) {
+                clearInterval(myInterval);
+                document.querySelector(".days").innerHTML = 0;
+                document.querySelector(".hours").innerHTML = 0;
+                document.querySelector(".minutes").innerHTML = 0;
+                document.querySelector(".seconds").innerHTML = 0;
+            }
+        }
+
+        // Import the calculate function from integration.js
+        // import {
+        //   calculateToken,
+        //   buyTokens,
+        //   maxToken,
+        //   handleChange,
+        // } from "./integration.js";
+
+        // Add an event listener to the input element
+        document.getElementById("call2").addEventListener("keyup", () => {
+            calculateToken();
+        });
+        document.getElementById("call2").addEventListener("change", () => {
+            calculateToken();
+        });
+        document.getElementById("call1").addEventListener("keyup", () => {
+            calculateToken();
+        });
+        document.getElementById("call1").addEventListener("change", () => {
+            calculateToken();
+        });
+        document.getElementById("buy-button").addEventListener("click", () => {
+            buyTokens();
+        });
+        document.getElementById("max_token_1").addEventListener("click", () => {
+            maxToken();
+        });
+        document.getElementById("max_token_2").addEventListener("click", () => {
+            maxToken();
+        });
+        document.getElementById("BNBUSDT").addEventListener("click", () => {
+            //   console.log("af");
+
+            handleChange("USDT");
+        });
+        document.getElementById("BNB").addEventListener("click", () => {
+            //   console.log("af");
+            handleChange("BNB");
+        });
+
+        const timeText = document.getElementById("time-text");
+
+        // Function to update the progress bar and text
+        function updateProgressBar() {
+            const timeBar = document.getElementById("time-bar");
+            const currentTime = Math.floor(new Date().getTime() / 1000); // Current time in seconds
+            const remainingTime = totalTime - currentTime;
+
+            //   console.log(remainingTime, "Time left");
+            if (remainingTime <= 0) {
+                if (totalTime != 0) {
+                    timeText.innerText = "Time expired";
+                    timeBar.style.width = "0%";
+                }
+            } else {
+                const days = Math.floor(remainingTime / (24 * 60 * 60));
+                const hours = Math.floor((remainingTime % (24 * 60 * 60)) / (60 * 60));
+                const minutes = Math.floor((remainingTime % (60 * 60)) / 60);
+                const seconds = Math.floor(remainingTime % 60);
+
+                timeText.innerText = `${days}d : ${hours}h : ${minutes}m : ${seconds}s`;
+                const percentage = (remainingTime / totalTime) * 100;
+                timeBar.style.width = `${100 - percentage}%`;
+            }
+        }
+
+        // Function to start the countdown
+        function startCountdown() {
+            // Update the progress bar continuously
+            setInterval(() => {
+                updateProgressBar();
+            }, 1000);
+        }
+
+        // Simulate an API call to get the total time (in seconds)
+        // Replace this with your actual API call
+        // function fetchTotalTime() {
+        //   // Assume the API returns the total time in seconds
+        //   // For example, you might use fetch() to get this data
+        //   const apiResponse = {
+        //     totalTime: 1706321400, // 30 minutes for demonstration
+        //   };
+
+        //   // Set the totalTime based on the API response
+        //   totalTime = apiResponse.totalTime;
+
+        //   // Start the countdown
+        //   startCountdown();
+        // }
+        startCountdown();
+    </script>
+</body>
+
 </html>

@@ -74,7 +74,7 @@ item2.addEventListener("click", () => {
   circle.style.left = "25%";
   circle.style.transform = "translateX(-25%) translateY(-50%)";
   removeActive();
-  item2.classList.add("active");  
+  item2.classList.add("active");
 });
 
 item3.addEventListener("click", () => {
@@ -110,3 +110,20 @@ menuBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   mobileMenu.classList.remove("active");
 });
+
+
+const pillsBnb = document.getElementById("pills-bnb");
+const pillsUsdt = document.getElementById("pills-usdt");
+
+const BNB = document.getElementById("BNB");
+const BNBUSDT = document.getElementById("BNBUSDT");
+
+pillsBnb.addEventListener("click", () => {
+  BNB.classList.add("active");
+  BNBUSDT.classList.remove("active");
+})
+
+pillsUsdt.addEventListener("click", () => {
+  BNB.classList.remove("active");
+  BNBUSDT.classList.add("active");
+})
