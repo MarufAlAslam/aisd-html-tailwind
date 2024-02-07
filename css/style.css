@@ -191,34 +191,60 @@ input[type="radio"]:checked+label {
     font-style: italic;
 }
 
-.icon:hover{
+.icon:hover {
     background-color: #00bfff;
 }
 
-.divider{
+.divider {
     background-color: rgba(255, 255, 255, 0.35);
     height: 1px;
     width: 100%;
 }
 
-.tab, .mobile{
+.tab,
+.mobile {
     display: none;
 }
 
 
-@media screen and (max-width: 1024px){
-    .container{
+@media screen and (max-width: 1024px) {
+    .container {
         max-width: 90%;
     }
-    .tab{
+
+    .tab {
         display: block;
     }
 
-    .tab-hide{
+    .tab-hide {
         display: none !important;
     }
+
     .navigator button {
         width: 50px;
         height: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+        word-wrap: break-word;
+    }
+
+    .btn-sky {
+        padding: 10px;
+    }
+
+    .img-holder.relative {
+        margin: auto;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .techs .card span {
+        font-size: 12px;
     }
 }
