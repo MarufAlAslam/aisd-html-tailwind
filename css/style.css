@@ -213,7 +213,11 @@ input[type="radio"]:checked+label {
     }
 
     .tab {
-        display: block;
+        display: block !important;
+    }
+
+    .tab.flex {
+        display: flex !important;
     }
 
     .tab-hide {
