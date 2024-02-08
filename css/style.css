@@ -4,7 +4,7 @@
 } */
 
 :root {
-    --w3m-accent-fill-color: #000 !important;
+    --w3m-accent-fill-color: #fff !important;
     --w3m-accent-color: #0abab5 !important;
     --w3m-color-overlay: transparent !important;
   }
@@ -69,6 +69,7 @@ body {
 .roboto {
     font-family: 'Roboto', sans-serif !important;
     line-height: normal;
+    letter-spacing: normal !important;
 }
 
 .border-sky {
